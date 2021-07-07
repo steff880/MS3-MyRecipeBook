@@ -67,15 +67,25 @@
 <footer class="page-footer">
     <div class="container">
         <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.
-                </p>
+            <div class="col l6 offset-l2 s12">
+                <h5 class="white-text">Newsletter</h5>
+                <form action="">
+                    <div class="input-field">
+                        <!-- Pattern from  https://github.com/juanstelling/MS3_breaktasty/blob/master/templates/base.html -->
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            class="validate">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <button type="submit" class="btn-small btn-newsletter">Subscribe</button>
+                </form>
             </div>
-            <div class="col l4 offset-l2 s12">
-                <a class="social-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a class="social-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a class="social-links" href="https://twitter.com/?lang=en-gb" target="_blank"><i class="fab fa-twitter"></i></a>
+            <div class="col l4 s12">
+                <a class="social-links" href="https://www.facebook.com/" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a class="social-links" href="https://www.instagram.com/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="social-links" href="https://twitter.com/?lang=en-gb" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
             </div>
         </div>
     </div>
