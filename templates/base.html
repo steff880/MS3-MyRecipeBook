@@ -22,7 +22,7 @@
 
     <!-- Navigation -->
 
-    <header>
+    <header class="navbar-fixed">
         <!-- top navbar -->
         <nav class="nav-extended custom-bg">
             <div class="nav-wrapper">
@@ -54,10 +54,14 @@
             <li><a class="menu-link" href="#">Logout</a></li>
             <li><a class="menu-link" href="#">Manage Categories</a></li>
         </ul>
-        </header>
+    </header>
 
-    {% block content %}
-    {% endblock %}
+    <main class="container">
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
