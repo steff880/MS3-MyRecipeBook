@@ -57,6 +57,11 @@ header .brand-logo, .sidenav-logo {
     margin-bottom: 20px;
 }
 
+.page-footer .btn-newsletter {
+    border-radius: 12px;
+    margin-top: 5px;
+}
+
 .page-footer .social-links {
     padding: 10px;
 }
