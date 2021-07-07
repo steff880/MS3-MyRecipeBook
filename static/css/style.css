@@ -82,3 +82,22 @@ header .brand-logo, .sidenav-logo {
     margin-top: 10px;
 }
 
+/* Remove width and height from sidenav-overlay */
+/* From https://stackoverflow.com/questions/38642911/how-to-disable-sidenav-overlay-in-materializecss */
+
+.sidenav-overlay {
+    width: 0;
+    height: 0;
+}
+
+/* Media Queries */
+
+/* From https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    header nav {
+        padding: 0;
+    }
+}
