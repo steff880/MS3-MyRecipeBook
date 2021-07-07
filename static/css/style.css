@@ -62,6 +62,10 @@ header .brand-logo, .sidenav-logo {
     margin-top: 5px;
 }
 
+.page-footer .social-box {
+    padding-top: 5px;
+}
+
 .page-footer .social-links {
     padding: 10px;
 }
