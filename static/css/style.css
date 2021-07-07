@@ -46,4 +46,10 @@ header .brand-logo, .sidenav-logo {
 }
 
 
+/* Footer */
+
+.page-footer {
+    background: linear-gradient(69deg, rgb(239, 191, 191), rgba(176, 188, 194, 0.61));
+}
+
 
