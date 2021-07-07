@@ -50,6 +50,26 @@ header .brand-logo, .sidenav-logo {
 
 .page-footer {
     background: linear-gradient(69deg, rgb(239, 191, 191), rgba(176, 188, 194, 0.61));
+    padding: 20px 0;
 }
 
+.page-footer .social-heading {
+    margin-bottom: 20px;
+}
+
+.page-footer .social-links {
+    padding: 10px;
+}
+
+.social-links i {
+    color: #6A7359;
+    font-size: 1.7em;
+}
+
+.page-footer .img-box {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
 
