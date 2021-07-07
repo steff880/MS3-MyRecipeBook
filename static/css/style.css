@@ -9,5 +9,41 @@
 
 body {
     min-height: 100vh;
-    background-color: rgba(245, 225, 225, 0.29);
+    background-color: rgba(241, 183, 183, 0.29);
 }
+
+
+/* Navigation */
+
+header nav {
+    padding: 0 30px;
+}
+
+nav.custom-bg {
+    background-color: rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(12px);
+}
+
+header .brand-logo, .sidenav-logo, .hamburger {
+    color: #6A7359;
+}
+
+header ul .menu-link {
+    color: #6A7359;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+header .brand-logo, .sidenav-logo {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+/* Custom text-shadow */
+
+.text-shadow {
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+
+
