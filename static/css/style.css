@@ -24,6 +24,11 @@ nav.custom-bg {
     backdrop-filter: blur(12px);
 }
 
+header .sidenav {
+    background: rgba(243, 222, 222, 0.3);
+    backdrop-filter: blur(35px);
+}
+
 header .brand-logo, .sidenav-logo, .hamburger {
     color: #6A7359;
 }
