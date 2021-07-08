@@ -69,6 +69,14 @@ header .brand-logo, .sidenav-logo {
     letter-spacing: 1px;
 }
 
+.container .form-container {
+    width: 100%;
+    min-height: inherit;
+}
+
+.form-container .form-row {
+    width: 100%;
+}
 
 /* Footer */
 
