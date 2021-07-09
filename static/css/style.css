@@ -117,6 +117,12 @@ header .brand-logo,
     background-color: #515251;
 }
 
+/* Custom disabled button */
+.btn-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 .form-container p {
     color: #6A7359;
     font-weight: 400;
