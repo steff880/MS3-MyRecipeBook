@@ -151,6 +151,12 @@ header .brand-logo,
 .social-links i {
     color: #6A7359;
     font-size: 1.7em;
+    transition: 0.2s ease;
+}
+
+.social-links:hover i {
+    transform: scale(1.2);
+    color: #515251;
 }
 
 .page-footer .img-box {
