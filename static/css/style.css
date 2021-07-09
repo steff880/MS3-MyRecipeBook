@@ -78,6 +78,17 @@ header .brand-logo, .sidenav-logo {
     width: 100%;
 }
 
+.form-container .btn-register {
+    padding: 12px 30px;
+    border-radius: 20px;
+    outline: 0;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #fff;
+    background-color: #6A7359;
+}
+
 /* Footer */
 
 .page-footer {
