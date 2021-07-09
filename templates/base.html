@@ -51,7 +51,8 @@
             <li><a class="menu-link" href="{{ url_for('home') }}">Home</a></li>
             <li><a class="menu-link" href="#">Profile</a></li>
             <li><a class="menu-link" href="#">Recipes</a></li>
-            <li><a class="menu-link" href="{{ url_for('register') }}">Register</a></li>
+            <li class="{% block sidenav_register %}{% endblock %}"><a class="menu-link"
+                    href="{{ url_for('register') }}">Register</a></li>
             <li><a class="menu-link" href="#">Login</a></li>
             <li><a class="menu-link" href="#">Logout</a></li>
             <li><a class="menu-link" href="#">Manage Categories</a></li>
