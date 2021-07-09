@@ -107,6 +107,12 @@ header .brand-logo, .sidenav-logo {
     background-color: #6A7359;
 }
 
+.form-container p {
+    color: #6A7359;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
 
 /* Footer */
 
