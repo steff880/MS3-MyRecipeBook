@@ -190,4 +190,12 @@ header .brand-logo,
     header nav {
         padding: 0;
     }
+
+    .content-container {
+        padding-top: 35px;
+    }
+
+    .form-container {
+        padding: 35px 0;
+    }
 }
