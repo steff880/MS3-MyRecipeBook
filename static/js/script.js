@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  // Event Listeners
+
   [password, confirmPassword].forEach(item => {
     item.addEventListener('keyup', checkIfPasswordsMatch);
   })
