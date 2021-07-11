@@ -67,6 +67,16 @@ header .brand-logo,
     background-size: cover;
 }
 
+.container .flash-message {
+    font-size: 1.4em;
+    color: #515251;
+    background-color: #f48b89;
+    padding: 15px 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 24px;
+}
+
 .container .page-heading {
     padding: 15px 0;
     margin-top: 30px;

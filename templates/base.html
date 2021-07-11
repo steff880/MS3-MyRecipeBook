@@ -59,9 +59,26 @@
         </ul>
     </header>
 
+    
     <main class="container content-container {% block page_background %}{% endblock %}">
 
+        <section>
+            <!-- flash messages -->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="row">
+                            <h4 class="flash-message center-align">{{ message }}</h4>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </section>
+    
+
         {% block content %}
+            {% block flash %}
+            {% endblock %}
         {% endblock %}
 
     </main>
