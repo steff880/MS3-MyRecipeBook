@@ -57,6 +57,7 @@ header .brand-logo,
 
 .content-container {
     min-height: 70vh;
+    padding-top: 35px;
 }
 
 /* Full page background */
@@ -189,10 +190,6 @@ header .brand-logo,
 
     header nav {
         padding: 0;
-    }
-
-    .content-container {
-        padding-top: 35px;
     }
 
     .form-container {
