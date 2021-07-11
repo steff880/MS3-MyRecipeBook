@@ -36,7 +36,8 @@
                     <li><a class="menu-link" href="#">Recipes</a></li>
                     <li class="{% block nav_register %}{% endblock %}"><a class="menu-link"
                             href="{{ url_for('register') }}">Register</a></li>
-                    <li><a class="menu-link" href="#">Login</a></li>
+                    <li class="{% block nav_login %}{% endblock %}"><a class="menu-link"
+                            href="{{ url_for('login') }}">Login</a></li>
                     <li><a class="menu-link" href="#">Logout</a></li>
                     <li><a class="menu-link" href="#">Manage Categories</a></li>
                 </ul>
@@ -53,7 +54,8 @@
             <li><a class="menu-link" href="#">Recipes</a></li>
             <li class="{% block sidenav_register %}{% endblock %}"><a class="menu-link"
                     href="{{ url_for('register') }}">Register</a></li>
-            <li><a class="menu-link" href="#">Login</a></li>
+            <li class="{% block sidenav_login %}{% endblock %}"><a class="menu-link" href="{{ url_for('login') }}">Login</a>
+            </li>
             <li><a class="menu-link" href="#">Logout</a></li>
             <li><a class="menu-link" href="#">Manage Categories</a></li>
         </ul>
