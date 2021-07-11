@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 // Vanilla JS
 
-document.addEventListener('DOMContentLoaded', function() {
+
 
   let password = document.getElementById('password');
   let confirmPassword = document.getElementById('confirm_password');
@@ -37,10 +37,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Event Listeners
 
-  [password, confirmPassword].forEach(item => {
-    item.addEventListener('keyup', checkIfPasswordsMatch);
-  })
-  
-})
