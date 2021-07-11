@@ -196,3 +196,20 @@ header .brand-logo,
         padding: 35px 0;
     }
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .content-container {
+        min-height: 65vh;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .content-container {
+        min-height: 70vh;
+    }
+}
