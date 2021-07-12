@@ -186,6 +186,21 @@ header .brand-logo,
 }
 
 
+.btn-add-recipe {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #6A7359;
+    border-radius: 12px;
+    font-size: 1.1em;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    transition: 0.4s ease;
+}
+
+.btn-add-recipe:hover {
+    color: #fff;
+    background-color: #6A7359;
+}
+
 /* Footer */
 
 .page-footer {
