@@ -179,6 +179,12 @@ header .brand-logo,
     background: linear-gradient(100deg, #eab0b1, #ffdfdf33, #ffffffb0);
 }
 
+/* Profile */
+
+.my-recipes-heading {
+    color: #515251;
+}
+
 
 /* Footer */
 
