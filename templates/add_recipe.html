@@ -16,21 +16,21 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-folder-open prefix form-icon"></i>
-                        <select>
+                        <select id="category_name" name="category_name" class="validate" required>
                             <option value="" disabled selected>Choose Category</option>
                             {% for category in categories %}
-                            <option value="{{ category.name }}">{{ category.name }}</option>
+                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                             {% endfor %}
                         </select>
-                        <label>Recipe Category</label>
+                        <label for="category_name">Recipe Category</label>
                     </div>
                 </div>
                 <!-- Recipe name -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix form-icon"></i>
-                        <input type="text" id="name" name="name" minlength="3" maxlength="25" class="validate" required>
-                        <label for="name">Recipe Name</label>
+                        <input type="text" id="recipe_name" name="recipe_name" minlength="3" maxlength="25" class="validate" required>
+                        <label for="recipe_name">Recipe Name</label>
                     </div>
                 </div>
                 <!-- Original Recipe URL -->
@@ -49,6 +49,24 @@
                         <input type="url" id="image_url" name="image_url" class="validate" pattern="https?://.+"
                             required>
                         <label for="image_url">Recipe Image URL</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m5">
+                        <i class="fas fa-clock prefix form-icon"></i>
+                        <select id="prep_time" name="prep_time" class="validate" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="15 min or less">15 min or less</option>
+                            <option value="20 min">20 min</option>
+                            <option value="30 min">30 min</option>
+                            <option value="40 min">40 min</option>
+                            <option value="50 min">50 min</option>
+                            <option value="60 min">60 min</option>
+                            <option value="70 min">70 min</option>
+                            <option value="80 min">80 min</option>
+                            <option value="90 min or more">90 min or more</option>
+                        </select>
+                        <label for="prep_time">Total time</label>
                     </div>
                 </div>
             </div>
