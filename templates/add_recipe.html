@@ -12,8 +12,10 @@
     <div class="row form-row">
         <form action="{{ url_for('add_recipe') }}" method="POST" class="col s12 m10 offset-m1 l8 offset-l2">
             <div class="card-panel">
+                <!-- Select category -->
                 <div class="row">
                     <div class="input-field col s12">
+                        <i class="fas fa-folder-open prefix form-icon"></i>
                         <select>
                             <option value="" disabled selected>Choose Category</option>
                             {% for category in categories %}
@@ -21,6 +23,24 @@
                             {% endfor %}
                         </select>
                         <label>Recipe Category</label>
+                    </div>
+                </div>
+                <!-- Recipe name -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-pencil-alt prefix form-icon"></i>
+                        <input type="text" id="name" name="name" minlength="3" maxlength="25" class="validate" required>
+                        <label for="name">Recipe Name</label>
+                    </div>
+                </div>
+                <!-- Original Recipe URL -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <!-- Pattern from https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/templates/recipe/create_recipe.html -->
+                        <i class="fas fa-book-open prefix form-icon"></i>
+                        <input type="url" id="recipe_url" name="recipe_url" minlength="3" maxlength="25"
+                            class="validate" pattern="https?://.+">
+                        <label for="recipe_ur">Original Recipe URL</label>
                     </div>
                 </div>
             </div>
