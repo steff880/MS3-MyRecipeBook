@@ -32,7 +32,8 @@
                 <ul class="right hide-on-med-and-down">
                     <li class="{% block nav_home %}{% endblock %}"><a class="menu-link"
                             href="{{ url_for('home') }}">Home</a></li>
-                    <li><a class="menu-link" href="#">Profile</a></li>
+                    <li class="{% block nav_profile %}{% endblock %}"><a class="menu-link"
+                            href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                     <li><a class="menu-link" href="#">Recipes</a></li>
                     <li class="{% block nav_register %}{% endblock %}"><a class="menu-link"
                             href="{{ url_for('register') }}">Register</a></li>
@@ -50,11 +51,13 @@
                 <h4 class="center-align sidenav-logo text-shadow">MyRecipeBook</h4>
             </li>
             <li><a class="menu-link" href="{{ url_for('home') }}">Home</a></li>
-            <li><a class="menu-link" href="#">Profile</a></li>
+            <li class="{% block sidenav_profile %}{% endblock %}"><a class="menu-link"
+                    href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
             <li><a class="menu-link" href="#">Recipes</a></li>
             <li class="{% block sidenav_register %}{% endblock %}"><a class="menu-link"
                     href="{{ url_for('register') }}">Register</a></li>
-            <li class="{% block sidenav_login %}{% endblock %}"><a class="menu-link" href="{{ url_for('login') }}">Login</a>
+            <li class="{% block sidenav_login %}{% endblock %}"><a class="menu-link"
+                    href="{{ url_for('login') }}">Login</a>
             </li>
             <li><a class="menu-link" href="#">Logout</a></li>
             <li><a class="menu-link" href="#">Manage Categories</a></li>
