@@ -123,7 +123,9 @@ def logout():
 
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
-    return render_template("add_recipe.html")
+    categories = mongo.db.categories.find().sort("name", 1)
+
+    return render_template("add_recipe.html", categories=categories)
 
 # ---------- Run app
 

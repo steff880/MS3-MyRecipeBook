@@ -201,6 +201,21 @@ header .brand-logo,
     background-color: #6A7359;
 }
 
+
+/* Add Recipe */
+
+/* change color of materialize select option */
+
+.dropdown-content li>a, .dropdown-content li>span {
+    color: #6A7359;
+}
+
+/* change color of materialize select label  */
+.input-field>label {
+    color: #515251;
+}
+
+
 /* Footer */
 
 .page-footer {
