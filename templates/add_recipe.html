@@ -19,7 +19,7 @@
                         <select>
                             <option value="" disabled selected>Choose Category</option>
                             {% for category in categories %}
-                                <option value="{{ category.name }}">{{ category.name }}</option>
+                            <option value="{{ category.name }}">{{ category.name }}</option>
                             {% endfor %}
                         </select>
                         <label>Recipe Category</label>
@@ -38,9 +38,17 @@
                     <div class="input-field col s12">
                         <!-- Pattern from https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/templates/recipe/create_recipe.html -->
                         <i class="fas fa-book-open prefix form-icon"></i>
-                        <input type="url" id="recipe_url" name="recipe_url" minlength="3" maxlength="25"
-                            class="validate" pattern="https?://.+">
+                        <input type="url" id="recipe_url" name="recipe_url" class="validate" pattern="https?://.+">
                         <label for="recipe_ur">Original Recipe URL</label>
+                    </div>
+                </div>
+                <!-- Recipe Image URl -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="far fa-image prefix form-icon"></i>
+                        <input type="url" id="image_url" name="image_url" class="validate" pattern="https?://.+"
+                            required>
+                        <label for="image_url">Recipe Image URL</label>
                     </div>
                 </div>
             </div>
