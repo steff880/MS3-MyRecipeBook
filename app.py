@@ -117,6 +117,14 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
+
+# ------------ Add Recipe
+
+
+@app.route("/add_recipe", methods=["GET", "POST"])
+def add_recipe():
+    return render_template("add_recipe.html")
+
 # ---------- Run app
 
 
