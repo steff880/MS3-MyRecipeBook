@@ -93,6 +93,8 @@ header .brand-logo,
 .container .form-container {
     width: 100%;
     min-height: inherit;
+    position: relative;
+    overflow: hidden;
 }
 
 .form-container .form-row {
@@ -148,6 +150,33 @@ header .brand-logo,
     letter-spacing: 2px;
     font-size: 1.4em;
     line-height: 35px;
+}
+
+.form-container .card-panel-login {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(14px);
+
+}
+
+.circle-top,
+.circle-bottom {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.circle-top {
+    top: -90px;
+    left: -80px;
+    background: linear-gradient(320deg, #eab0b1, #ffdfdf33, #ffffffb0);
+}
+
+.circle-bottom {
+    bottom: -90px;
+    right: -65px;
+    background: linear-gradient(100deg, #eab0b1, #ffdfdf33, #ffffffb0);
 }
 
 
