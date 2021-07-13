@@ -67,6 +67,11 @@ The user is looking for web-based app where they can:
 [Wireframes part 2](https://github.com/steff880/MS3-MyRecipeBook/blob/main/assets/wireframes/wireframes-part2.png)
 ## Features
 ## Technologies Used
+### Languages
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 ### Frameworks, Libraries & Programs Used
 ## Resources
 ## Testing
