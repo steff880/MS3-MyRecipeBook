@@ -22,12 +22,16 @@ The user is looking for web-based app where they can:
 - Able to Add(Create) recipes and store them in the database.
 - Able to View my own recipes
 - Able to Edit recipe
-- Able to Delete a recipe(s) I have created
+- Able to Delete a recipe(s) I have created.
 ### Design
 - #### Typography
+    - The primary font used is **Poppins**, and **Sans Serif** is used as a fallback font.
 -   #### Images
 ## Data Schema
 ### Wireframes
+[Wireframes part 1](https://github.com/steff880/MS3-MyRecipeBook/blob/main/assets/wireframes/wireframes-part1.png)
+
+[Wireframes part 2](https://github.com/steff880/MS3-MyRecipeBook/blob/main/assets/wireframes/wireframes-part2.png)
 ## Features
 ## Technologies Used
 ### Frameworks, Libraries & Programs Used
