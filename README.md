@@ -28,6 +28,39 @@ The user is looking for web-based app where they can:
     - The primary font used is **Poppins**, and **Sans Serif** is used as a fallback font.
 -   #### Images
 ## Data Schema
+[MongoDB](https://www.mongodb.com/) was used for this project and schema design was created. See below:
+
+![Schema Design](assets/img-readme/schema-design.png)
+
+### Users Collection
+- Upon regisering, the user will provide:
+    - Username
+    - Email Address
+    - Password
+    - is_admin is given a default value of False.
+
+### Recipes Collection
+- When creating a new recipe the user will provide the following:
+    - Recipe Name
+    - Recipe Image URL
+    - Original Recipe URL(not required but needed to avoid copyright issues)
+    - Category
+    - Ingredients
+    - Method
+    - Prep Time (Total time needed to prepare the recipe)
+    - Number of Serves
+    - Created By (it will get a value of the current user in session)
+
+### Categories Collection
+- Currently there are four categories the user can choose from:
+    - Main
+    - Starter
+    - Salad
+    - Soup
+
+### Subscribers Collection
+- If the user decides to subscribe for the newsletter he/she will have to provide:
+    - Email Addres (which is stored in the collection)
 ### Wireframes
 [Wireframes part 1](https://github.com/steff880/MS3-MyRecipeBook/blob/main/assets/wireframes/wireframes-part1.png)
 
