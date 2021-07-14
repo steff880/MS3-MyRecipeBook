@@ -73,6 +73,20 @@ The user is looking for web-based app where they can:
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 ### Frameworks, Libraries & Programs Used
+- [Materialize](https://materializecss.com/)
+    - Materialize was used to help with the responsiveness and styling of the website. 
+- [Balsamiq](https://balsamiq.com/)
+    - Balsamiq was used for creating the wireframes for this project.
+- [jQuery](https://jquery.com/)
+    - jQuery was mainly used to initialize some Materialize components.
+- [Google Fonts](https://fonts.google.com/)
+    - Google Fonts was used to import the **Poppins** font, which was used throughout the project.
+- [Font Awesome](https://fontawesome.com/)
+    - Font Awesome was used for all icons used in this project.
+- [GitHub](https://github.com/)
+    - GitHub is used to store the project's code after being pushed from Git.
+- [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 ## Resources
 ## Testing
 ## Deployment
