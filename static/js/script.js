@@ -15,9 +15,7 @@ $(document).ready(function () {
 
 // Vanilla JS
 
-
-
-
+// When the user tries to register, check if passwords match
 
 const checkIfPasswordsMatch = () => {
   let password = document.getElementById('password');
@@ -42,3 +40,4 @@ const checkIfPasswordsMatch = () => {
     regButton.classList.remove('btn-disabled');
   }
 }
+
