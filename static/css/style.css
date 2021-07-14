@@ -215,13 +215,20 @@ header .brand-logo,
     color: #515251;
 }
 
-/* Add ingredient button */
-.add-ingredient-btn {
+/* Add ingredient button and add step btn */
+.add-ingredient-btn, 
+.add-step-btn {
     padding: 10px 15px;
     border-radius: 12px;
     color: #fff;
     background-color: #515251;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.add-ingredient-btn:hover, 
+.add-step-btn:hover {
+    background-color: #6A7359;
 }
 
 
