@@ -255,6 +255,20 @@ header .brand-logo,
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
+.remove-field {
+    float: right;
+    padding: 8px 15px;
+    background-color: #e06666;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.remove-field:hover {
+    background-color: #da3d3d;
+}
+
 /* Footer */
 
 .page-footer {
