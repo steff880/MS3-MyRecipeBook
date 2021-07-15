@@ -206,6 +206,55 @@ header .brand-logo,
     min-height: 60vh;
 }
 
+.recipe-card {
+    position: relative;
+    max-width: 300px;
+    height: 190px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+    height: 420px;
+}
+
+.recipe-card .img-box {
+    position: relative;
+    width: 260px;
+    height: 173px;
+    top: -60px;
+    left: 6px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card .img-box .img {
+    max-width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.recipe-card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #6A7359;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.recipe-card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+}
 
 /* Add Recipe */
 
