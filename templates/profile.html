@@ -27,7 +27,23 @@
 </div>
 
 <section class="my-recipes">
-    
+    <div class="row">
+        {% for recipe in recipes %}
+        <div class="col s12 m4">
+            <div class="recipe-card">
+                <div class="img-box">
+                    <img class="img" src="{{ recipe.image_url }}" alt="{{ recipe.recipe_name }}">
+                </div>
+                <div class="content">
+                    <h3 class="recipe-heading">{{ recipe.recipe_name }}</h3>
+                    <p class="category-name">{{ recipe.category }}</p>
+                    <a class="full-recipe-btn" href="#">Full Recipe</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
 </section>
 
 
