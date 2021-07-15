@@ -201,6 +201,11 @@ header .brand-logo,
     background-color: #6A7359;
 }
 
+.my-recipes {
+    width: 100%;
+    min-height: 60vh;
+}
+
 
 /* Add Recipe */
 
