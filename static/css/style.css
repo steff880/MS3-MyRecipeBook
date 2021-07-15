@@ -261,6 +261,12 @@ header .brand-logo,
     font-weight: 900;
 }
 
+.recipe-card .content .category-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
 /* Add Recipe */
 
 /* change color of materialize select option */
