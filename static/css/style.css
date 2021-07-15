@@ -256,6 +256,11 @@ header .brand-logo,
     transition-delay: 0.3s;
 }
 
+.recipe-card .content .recipe-heading {
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
 /* Add Recipe */
 
 /* change color of materialize select option */
