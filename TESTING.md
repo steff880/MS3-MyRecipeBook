@@ -5,8 +5,8 @@ Had an issue with **Materialize sidenav overlay**. When you open the sidenav, co
 ![Sidenav Overlay](assets/img-readme/sidenav-overlay.png)
 
 - Fix:
-Did a research on how to deal with this issue and found solution on [Stack Overflow](https://stackoverflow.com/questions/38642911/how-to-disable-sidenav-overlay-in-materializecss */).
-The set the height and width of the overlay to **0**.
+Did a research on how to deal with this issue and found solution on [Stack Overflow](https://stackoverflow.com/questions/38642911/how-to-disable-sidenav-overlay-in-materializecss).
+Then set the height and width of the overlay to **0**.
 
 - Bug:
 Issue with Event Listener when trying to check if passwords match. 
