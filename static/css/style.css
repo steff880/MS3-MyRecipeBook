@@ -211,18 +211,19 @@ header .brand-logo,
 .recipe-card {
     position: relative;
     max-width: 300px;
-    height: 190px;
-    background-color: #fff;
+    height: 160px;
+    background-color: #f5e9e9;
+    border-radius: 10px;
     margin: 30px 10px;
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
     transition: 0.3s ease-in-out;
 }
 
 .recipe-card:hover {
-    height: 420px;
+    height: 350px;
 }
 
 .recipe-card .img-box {
