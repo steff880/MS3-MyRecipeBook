@@ -203,7 +203,8 @@ header .brand-logo,
 
 .my-recipes {
     width: 100%;
-    min-height: 60vh;
+    min-height: 56vh;
+    padding: 50px 0;
 }
 
 /* Credit Online Tutorials for the code below: https://www.youtube.com/watch?v=8b2mTq0Xrtw&list=LL&index=17 */
