@@ -74,7 +74,23 @@ const addNewStep = (e) => {
     }
 }
 
+// Delete step in method
+
+const deleteStep = (event) => {
+    event.preventDefault();
+    let element = event.target;
+
+    if (element.classList.contains('remove-step')) {
+
+        if (methodRow.children.length > 1) {
+            methodRow.lastChild.remove();
+            step--;
+        }
+    }
+}
+
 // Event Listeners
+methodRow.addEventListener('click', deleteStep)
 
 addStep.addEventListener('click', addNewStep)
 
