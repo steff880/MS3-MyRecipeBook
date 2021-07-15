@@ -1,4 +1,4 @@
-'use strict';
+// Code inspired from https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/static/js/recipe.js
 // Declare global variables
 
 // Set max ingredients
@@ -27,6 +27,7 @@ const appendIngredient = (e) => {
     }
 }
 
+// Code inspired from https://stackoverflow.com/questions/30601620/adding-an-event-listener-to-an-element-that-doesnt-exist-yet-in-vanilla-javascr
 // Delete New Ingredient
 
 const deleteIngredient = (event) => {
@@ -45,6 +46,6 @@ const deleteIngredient = (event) => {
 
 // Event Listeners
 
-document.addEventListener('click', deleteIngredient);
+ingredientRow.addEventListener('click', deleteIngredient);
 
 addIngredient.addEventListener('click', appendIngredient);

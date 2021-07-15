@@ -19,3 +19,20 @@ As I added same Event Listener to multiple elements and had a conflict on other 
 - Fix:
 Add onclick event in HTML to the elements and remove the Event Listener. Also probably could have targeted the elements by their id rather than class, and kept the Event Listener.
 
+- Bug:
+
+Issue with Add Recipe page and more specifically:
+
+        doocument.addEventListener('click', deleteIngredient)
+
+I was trying to add an Event Listener to an element that has not been created yet. Did a research and found this on [Stack Overflow](https://stackoverflow.com/questions/30601620/adding-an-event-listener-to-an-element-that-doesnt-exist-yet-in-vanilla-javascr). Then decided to use the above code and all was fine til next day when I could not do anything on the site. Once you get to Add Recipe page the site freezes and can not navigate to different page.
+
+- Fix:
+
+Spoke to a Tutor and realized what the issue was. Then as advised did this:
+
+        ingredientRow.addEventListener('click', deleteIngredient)
+
+So insted of adding Event Listener to the document, just add it to the parent element.
+
+
