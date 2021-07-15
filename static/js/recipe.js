@@ -7,6 +7,12 @@ let ingredientRow = document.getElementById('ingredient-row');
 let addIngredient = document.getElementById('add-ingredient');
 let ingredient = 1;
 
+// set max Method steps
+let maxSteps = 30;
+let methodRow = document.getElementById('method-row');
+let addStep = document.getElementById('add-step');
+let step = 1;
+
 // Append new ingredient
 
 const appendIngredient = (e) => {
@@ -44,7 +50,33 @@ const deleteIngredient = (event) => {
     }
 }
 
+// Append new steps in Method
+
+const addNewStep = (e) => {
+    // prevent default action
+    e.preventDefault();
+    // check if step is less than max
+    if (step < maxSteps) {
+        step++;
+        // create new div element
+        let newStepField = document.createElement('div');
+        // add classes to the element
+        newStepField.classList.add('input-field', 'col', 's12');
+        // set the inner HTML
+        newStepField.innerHTML = `
+            <i class="fas fa-list-ol prefix form-icon"></i>
+            <textarea id="method" name="method" class="materialize-textarea validate" minlength="3"
+                maxlength="300" rows="2" required></textarea>
+            <span class="helper-text grey-text darken-3"> Enter new method step</span>
+            <a id="delete-step-btn" href="#" class="remove-step text-shadow">Delete <i class="fas fa-trash-alt"></i></a>`;
+        // append to parent element
+        methodRow.append(newStepField);
+    }
+}
+
 // Event Listeners
+
+addStep.addEventListener('click', addNewStep)
 
 ingredientRow.addEventListener('click', deleteIngredient);
 

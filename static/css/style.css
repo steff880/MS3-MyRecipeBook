@@ -255,7 +255,8 @@ header .brand-logo,
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
-.remove-field {
+.remove-field,
+.remove-step {
     float: right;
     padding: 8px 15px;
     background-color: #e06666;
@@ -265,7 +266,8 @@ header .brand-logo,
     transition: 0.3s ease;
 }
 
-.remove-field:hover {
+.remove-field:hover,
+.remove-step:hover {
     background-color: #da3d3d;
 }
 
