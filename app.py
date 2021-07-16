@@ -100,7 +100,10 @@ def profile(username):
     # grab the session user's username form db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    recipes = list(mongo.db.recipes.find())
+    user = mongo.db.users.find_one(
+        {"username": session["user"]})
+    recipes = list(mongo.db.recipes.find(
+        {"created_by": ObjectId(user["_id"])}))
 
     if session["user"]:
         return render_template(
@@ -126,6 +129,7 @@ def logout():
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
+        user = mongo.db.users.find_one({"username": session["user"]})
         recipe = {
             "recipe_name": request.form.get("recipe_name"),
             "image_url": request.form.get("image_url"),
@@ -135,7 +139,7 @@ def add_recipe():
             "method": request.form.getlist("method"),
             "prep_time": request.form.get("prep_time"),
             "serves": request.form.get("serves"),
-            "created_by": session["user"]
+            "created_by": ObjectId(user["_id"])
         }
 
         mongo.db.recipes.insert_one(recipe)
