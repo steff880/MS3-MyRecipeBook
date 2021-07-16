@@ -35,4 +35,11 @@ Spoke to a Tutor and realized what the issue was. Then as advised did this:
 
 So insted of adding Event Listener to the document, just add it to the parent element.
 
+- Bug:
 
+Issue with cards on Profile page
+![Layout Issue](assets/img-readme/layout-issue.png)
+
+- Fix:
+
+Decided to use Materialize card and add some custom styling 
