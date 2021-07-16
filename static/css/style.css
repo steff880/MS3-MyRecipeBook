@@ -207,76 +207,64 @@ header .brand-logo,
     padding: 50px 0;
 }
 
-/* Credit Online Tutorials for the code below: https://www.youtube.com/watch?v=8b2mTq0Xrtw&list=LL&index=17 */
-
 .recipe-card {
-    position: relative;
-    max-width: 300px;
-    height: 160px;
+    /* background-color: #f9eded; */
     background-color: #f5e9e9;
+    border: none;
     border-radius: 10px;
-    margin: 30px 10px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
-    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
-.recipe-card:hover {
-    height: 350px;
-}
-
-.recipe-card .img-box {
-    position: relative;
-    width: 100%;
-    height: 140px;
-    top: -60px;
-    z-index: 1;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.recipe-card .img-box .img {
-    max-width: 100%;
-    border-radius: 4px;
-    object-fit: cover;
-}
-
-.recipe-card .content {
-    position: relative;
-    margin-top: -140px;
-    padding: 10px 15px;
-    text-align: center;
-    color: #6A7359;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-}
-
-.recipe-card:hover .content {
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3s;
-}
-
-.recipe-card .content .recipe-heading {
+.content .recipe-heading {
     font-size: 1.4em;
     font-weight: 900;
+    color: #6A7359;
 }
 
-.recipe-card .content .category-name {
+.content .category-name {
     font-size: 1.2em;
     font-weight: 600;
     margin-bottom: 35px;
+    color: #6A7359;
 }
 
-.recipe-card .content .full-recipe-btn {
+/* override materialize */
+
+.card.small .card-image, .card.medium .card-image, .card.large .card-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .card-action:last-child {
+    border-radius: 10px;
+    padding: 25px 22px;
+}
+
+.card .card-action {
+    border: none;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    color: #fff;
+    text-transform: none;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+    color: #515251;
+    background-color: #fff;
+    font-weight: 500;
+    border-left-style: solid;
+    border-left-width: 10px;
+}
+
+
+.recipe-card .full-recipe-btn {
     padding: 10px 20px;
     background-color: #515251;
     color: #fff;
     border-radius: 12px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    margin-left: 23px;
 }
 
 /* Add Recipe */
