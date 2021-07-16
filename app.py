@@ -5,6 +5,7 @@ from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
+from functools import wraps
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
@@ -19,6 +20,24 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
+
+
+# Credit:
+# https://github.com/TravelTimN/flask-task-manager-project/blob/demo/app.py
+# https://flask.palletsprojects.com/en/2.0.x/patterns/viewdecorators/#login-required-decorator
+
+
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        # no "user" in session
+        if "user" not in session:
+            flash("You must log in to view this page")
+            return redirect(url_for("login"))
+        # user is in session
+        return f(*args, **kwargs)
+    return decorated_function
+
 
 # ------------------ Home
 
@@ -124,6 +143,7 @@ def profile(username):
 
 
 @app.route("/logout")
+@login_required
 def logout():
     # remove user form session cookies
     flash("You have been logged out!")
@@ -135,6 +155,7 @@ def logout():
 
 
 @app.route("/add_recipe", methods=["GET", "POST"])
+@login_required
 def add_recipe():
     if request.method == "POST":
         user = mongo.db.users.find_one({"username": session["user"]})
