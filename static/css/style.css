@@ -230,6 +230,17 @@ header .brand-logo,
 
 /* override materialize */
 
+.card .card-image .card-title {
+    color: #515251;
+    background-color: #f5e9e9;
+    font-weight: 500;
+    padding: 0 10px;
+    font-size: 1.3em;
+    border-top-right-radius: 10px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+
+}
+
 .card.small .card-image, .card.medium .card-image, .card.large .card-image {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
