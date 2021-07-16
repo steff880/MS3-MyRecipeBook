@@ -30,34 +30,42 @@ def home():
 
 # ------------------- Register
 
+# Credit:
+# https://github.com/TravelTimN/flask-task-manager-project/blob/demo/app.py
+
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    if request.method == "POST":
-        # check if user already exists in db
-        existing_user = mongo.db.users.find_one(
-            {"username": request.form.get("username").lower()})
+    if "user" not in session:
+        # only if there isn't a current session["user"]
+        if request.method == "POST":
+            # check if user already exists in db
+            existing_user = mongo.db.users.find_one(
+                {"username": request.form.get("username").lower()})
 
-        if existing_user:
-            flash("Username alreay exists")
-            return redirect(url_for("register"))
+            if existing_user:
+                flash("Username alreay exists")
+                return redirect(url_for("register"))
 
-        register = {
-            "username": request.form.get("username").lower(),
-            "email": request.form.get("email_address").lower(),
-            "password": generate_password_hash(
-                request.form.get("password")),
-            "is_admin": False
-        }
-        mongo.db.users.insert_one(register)
+            register = {
+                "username": request.form.get("username").lower(),
+                "email": request.form.get("email_address").lower(),
+                "password": generate_password_hash(
+                    request.form.get("password")),
+                "is_admin": False
+            }
+            mongo.db.users.insert_one(register)
 
-        # put user into 'session' cookie
-        session["user"] = request.form.get("username").lower()
-        flash("Welcome, {} ! Let's start creating!".format(
-            request.form.get("username")))
-        return redirect(url_for("profile", username=session["user"]))
+            # put user into 'session' cookie
+            session["user"] = request.form.get("username").lower()
+            flash("Welcome, {} ! Let's start creating!".format(
+                request.form.get("username")))
+            return redirect(url_for("profile", username=session["user"]))
 
-    return render_template("register.html")
+        return render_template("register.html")
+
+    # User is already logged-in, direct them to their profile
+    return redirect(url_for("profile", username=session["user"]))
 
 # ------------------------- Login
 
