@@ -392,7 +392,7 @@ header .brand-logo,
     background-color: #515251;
 }
 
-.btn-row {
+.btn-row-recipe {
     margin-top: 30px;
     margin-bottom: 40px;
 }
@@ -460,6 +460,23 @@ header .brand-logo,
 
     .form-container {
         padding: 35px 0;
+    }
+
+    .card-panel {
+        padding: 24px 10px;
+    }
+
+    .btn-edit,
+    .btn-delete {
+        padding: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .btn-edit,
+    .btn-delete {
+        padding: 10px;
     }
 }
 
