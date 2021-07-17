@@ -350,7 +350,8 @@ header .brand-logo,
 
 /* Full Recipe */
 
-.intro {
+.intro,
+.recipe-info {
     padding: 30px 15px 10px 15px;
     margin: 50px 0;
     background-color: #f7e3e3;
@@ -419,6 +420,10 @@ header .brand-logo,
     margin-top: 30px;
     margin-bottom: 40px;
 }
+
+/* Recipe Info Section In Full Recipe Page */
+
+
 
 /* Footer */
 
