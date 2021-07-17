@@ -428,4 +428,8 @@ header .brand-logo,
     .content-container {
         min-height: 70vh;
     }
+
+    .card.medium {
+        height: 450px;
+    }
 }
