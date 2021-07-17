@@ -386,6 +386,11 @@ header .brand-logo,
     background-color: #e06666;
 }
 
+.btn-row {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
 /* Footer */
 
 .page-footer {
