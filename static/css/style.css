@@ -357,6 +357,13 @@ header .brand-logo,
     min-height: 30vh;
 }
 
+.total-time,
+.serves,
+.recipe-url {
+    color: #6A7359;
+    font-weight: 500;
+}
+
 /* Footer */
 
 .page-footer {
