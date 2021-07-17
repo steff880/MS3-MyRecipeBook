@@ -11,7 +11,7 @@
 </div>
 
 
-
+<!-- Full Recipe Intro -->
 <section class="intro valign-wrapper">
     <div class="row">
         <div class="col s12 m6 xl5">
@@ -60,10 +60,34 @@
     </div>
 </section>
 
+<!-- Method and Ingredients -->
+<!-- Inspired from https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/templates/recipe/recipe.html -->
 <section class="recipe-info valign-wrapper">
     <div class="row">
-        <div class="col s12"></div>
-        <div class="col s12"></div>
+        <div class="col s12 m6 xl5">
+            <div class="panel-ingredients">
+                <div class="col s12">
+                    <h3>Ingredients</h3>
+                </div>
+                <div class="col s12 ingredients-list">
+                    {% for ingredient in recipe.ingredients %}
+                        <p class="ingredient">{{ ingredient }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 xl7">
+            <ol>
+                <li>
+                    <h3 class="center-align">Method</h3>
+                </li>
+                {% for step in recipe.method %}
+                <li>
+                    <span>Step {{ loop.index }}: </span><br>{{ step }}
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
     </div>
 </section>
 
