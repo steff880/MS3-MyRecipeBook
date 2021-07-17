@@ -186,6 +186,17 @@ def add_recipe():
 
     return render_template("add_recipe.html", categories=categories)
 
+
+# ------------------ Full recipe page
+
+
+@app.route("/full_recipe/<recipe_id>")
+@login_required
+def full_recipe(recipe_id):
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("full_recipe.html", recipe=recipe)
+
+
 # ---------- Run app
 
 
