@@ -401,7 +401,8 @@ header .brand-logo,
     background-color: #515251;
 }
 
-.btn-edit:hover {
+.btn-edit:hover,
+.btn-back:hover {
     background-color: #111;
 }
 
