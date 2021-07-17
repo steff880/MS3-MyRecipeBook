@@ -18,11 +18,17 @@
             <div class="card-panel">
                 <p>Total Time: <span>{{ recipe.prep_time }}</span></p>
                 <p>Serves: <span>{{ recipe.serves }}</span></p>
-                <p>
-                    Original Recipe <a href="{{ recipe.recipe_url }}" target="_blank">Here</a>
-                </p>
+                {% if recipe.recipe_url %}
+                    <p>
+                        Original Recipe <a href="{{ recipe.recipe_url }}" target="_blank">Here</a>
+                    </p>
+                {% endif %}
                 <div class="col s12">
-                    <a href="#"></a>
+                    <a class="btn-edit" href="">Edit <i class="fas fa-edit"></i></a>
+                    <a class="btn-delete" href="">Delete <i class="fas fa-trash-alt"></i></a>
+                </div>
+                <div class="col s12">
+                    <a href="#">Back</a>
                 </div>
             </div>
         </div>
