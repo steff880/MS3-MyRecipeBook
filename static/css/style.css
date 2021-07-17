@@ -343,7 +343,8 @@ header .brand-logo,
 }
 
 .remove-field:hover,
-.remove-step:hover {
+.remove-step:hover,
+.btn-delete:hover {
     background-color: #da3d3d;
 }
 
@@ -362,6 +363,27 @@ header .brand-logo,
 .recipe-url {
     color: #6A7359;
     font-weight: 500;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.btn-edit {
+    background-color: #515251;
+}
+
+.btn-edit:hover {
+    background-color: #111;
+}
+
+.btn-delete {
+    background-color: #e06666;
 }
 
 /* Footer */
