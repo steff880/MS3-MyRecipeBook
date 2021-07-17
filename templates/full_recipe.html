@@ -18,18 +18,18 @@
             <div class="card-panel center-align">
                 <div class="row">
                     <div class="col s12">
-                        <p>Total Time: <span>{{ recipe.prep_time }}</span></p>
+                        <p class="total-tme">Total Time: <span>{{ recipe.prep_time }}</span></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12">
-                        <p>Serves: <span>{{ recipe.serves }}</span></p>
+                        <p class="serves">Serves: <span>{{ recipe.serves }}</span></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12">
                         {% if recipe.recipe_url %}
-                            <p>
+                            <p class="recipe_url">
                                 Original Recipe <a href="{{ recipe.recipe_url }}" target="_blank">Here</a>
                             </p>
                         {% endif %}
@@ -47,7 +47,7 @@
                 </div>
                 <div class="row">
                     <div class="col s12">
-                        <a href="#">Back</a>
+                        <a class="btn-back" href="#">Back</a>
                     </div>
                 </div>
             </div>
