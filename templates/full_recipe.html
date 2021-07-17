@@ -12,27 +12,47 @@
 
 
 
-<section>
+<section class="intro">
     <div class="row">
-        <div class="col s12 m6">
-            <div class="card-panel">
-                <p>Total Time: <span>{{ recipe.prep_time }}</span></p>
-                <p>Serves: <span>{{ recipe.serves }}</span></p>
-                {% if recipe.recipe_url %}
-                    <p>
-                        Original Recipe <a href="{{ recipe.recipe_url }}" target="_blank">Here</a>
-                    </p>
-                {% endif %}
-                <div class="col s12">
-                    <a class="btn-edit" href="">Edit <i class="fas fa-edit"></i></a>
-                    <a class="btn-delete" href="">Delete <i class="fas fa-trash-alt"></i></a>
+        <div class="col s12 m4">
+            <div class="card-panel center-align">
+                <div class="row">
+                    <div class="col s12">
+                        <p>Total Time: <span>{{ recipe.prep_time }}</span></p>
+                    </div>
                 </div>
-                <div class="col s12">
-                    <a href="#">Back</a>
+                <div class="row">
+                    <div class="col s12">
+                        <p>Serves: <span>{{ recipe.serves }}</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        {% if recipe.recipe_url %}
+                            <p>
+                                Original Recipe <a href="{{ recipe.recipe_url }}" target="_blank">Here</a>
+                            </p>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="col s6">
+                            <a class="btn-edit" href="">Edit <i class="fas fa-edit"></i></a>
+                        </div>
+                        <div class="col s6">
+                            <a class="btn-delete" href="">Delete <i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <a href="#">Back</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col s12">
+        <div class="col s12 m6">
             <div class="img-box">
                 <img src="" alt="">
             </div>
