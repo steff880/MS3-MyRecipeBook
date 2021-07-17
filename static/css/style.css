@@ -366,12 +366,13 @@ header .brand-logo,
 }
 
 .btn-edit,
-.btn-delete {
+.btn-delete,
+.btn-back {
     padding: 10px 20px;
     color: #fff;
     border-radius: 10px;
-    transition: 0.3s ease;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
 }
 
 .btn-edit {
@@ -384,6 +385,11 @@ header .brand-logo,
 
 .btn-delete {
     background-color: #e06666;
+}
+
+.btn-back {
+    padding: 10px 30px;
+    background-color: #515251;
 }
 
 .btn-row {
