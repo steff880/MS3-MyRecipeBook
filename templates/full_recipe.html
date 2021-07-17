@@ -14,12 +14,16 @@
 
 <section>
     <div class="row">
-        <div class="col s12">
-            <p></p>
-            <p></p>
-            <p><a href="#"></a></p>
-            <div class="col s12">
-                <a href="#"></a>
+        <div class="col s12 m6">
+            <div class="card-panel">
+                <p>Total Time: <span>{{ recipe.prep_time }}</span></p>
+                <p>Serves: <span>{{ recipe.serves }}</span></p>
+                <p>
+                    Original Recipe <a href="{{ recipe.recipe_url }}" target="_blank">Here</a>
+                </p>
+                <div class="col s12">
+                    <a href="#"></a>
+                </div>
             </div>
         </div>
         <div class="col s12">
