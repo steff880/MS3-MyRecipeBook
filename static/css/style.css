@@ -358,6 +358,11 @@ header .brand-logo,
     min-height: 30vh;
 }
 
+.card-panel-full-recipe {
+    border-radius: 10px;
+    background-color: #f5e9e9;
+}
+
 .total-time,
 .serves,
 .recipe-url {
