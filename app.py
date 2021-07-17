@@ -77,6 +77,7 @@ def register():
 
             # put user into 'session' cookie
             session["user"] = request.form.get("username").lower()
+            session["user_id"] = str(existing_user["_id"])
             flash("Welcome, {} ! Let's start creating!".format(
                 request.form.get("username")))
             return redirect(url_for("profile", username=session["user"]))
@@ -104,6 +105,7 @@ def login():
                     existing_user['password'], request.form.get(
                         "password")):
                     session["user"] = request.form.get("username").lower()
+                    session["user_id"] = str(existing_user["_id"])
                     flash("Welcome back {} ! Let's start creating!".format(
                             request.form.get("username")))
                     return redirect(url_for(
