@@ -363,6 +363,20 @@ header .brand-logo,
     background-color: #f5e9e9;
 }
 
+.intro .img-box-recipe {
+    width: 100%;
+    height: 290px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.intro .img-box-recipe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .total-time,
 .serves,
 .recipe-url {
