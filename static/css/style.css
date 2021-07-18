@@ -201,7 +201,8 @@ header .brand-logo,
     background-color: #6A7359;
 }
 
-.my-recipes {
+.my-recipes,
+.recipes {
     width: 100%;
     min-height: 56vh;
     padding: 50px 0;
