@@ -427,6 +427,7 @@ header .brand-logo,
     width: 100%;
     min-height: 400px;
     margin-top: 10px;
+    margin-bottom: 20px;
     background-color: #f5e9e9;
     border-radius: 12px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
