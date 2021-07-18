@@ -68,7 +68,8 @@
             <div class="panel-ingredients">
                 <div class="col s12">
                     <h3 class="ing-heading center-align">
-                        Ingredients <span class="img-cont"><img src="{{ url_for('static', filename='images/mint-leaf.png') }}" alt=""></span></h3>
+                        Ingredients<span class="img-cont"><img
+                                src="{{ url_for('static', filename='images/mint-leaf.png') }}" alt=""></span></h3>
                 </div>
                 <div class="col s12 ingredients-list">
                     {% for ingredient in recipe.ingredients %}
@@ -79,11 +80,13 @@
         </div>
         <div class="col s12 m6 xl7">
             <ol>
-                <li>
-                    <h3 class="center-align method-heading">Method</h3>
+                <li class="heading-panel">
+                    <h3 class="center-align method-heading">
+                        Method<span class="img-cont"><img src="{{ url_for('static', filename='images/mint-leaf.png') }}"
+                                alt=""></span></h3>
                 </li>
                 {% for step in recipe.method %}
-                <li>
+                <li class="step-panel">
                     <span>Step {{ loop.index }}: </span><br>{{ step }}
                 </li>
                 {% endfor %}
