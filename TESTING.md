@@ -64,3 +64,13 @@ The element with class **card-panel-full-recipe** desn't have a correct height w
 - Fix:
 
 Add ` margin-top: 40px; ` to **back-btn-row** class, to give some space from the text on top and ` min-height: 290px; ` to **card-panel-full-recipe** class, to fix the height issue. 
+
+- Bug:
+
+Event listener bug:
+
+![Event Listener](assets/img-readme/event-listener-bug.png)
+
+- Fix:
+
+Add onclick event on the element in HTML and remove Event Listener form script.js file

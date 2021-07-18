@@ -90,5 +90,3 @@ const checkIfPasswordsMatch = () => {
 const takeMeBack = () => {
   window.history.back();
 }
-
-document.getElementById("back-btn").addEventListener('click', takeMeBack)
