@@ -47,6 +47,15 @@ def login_required(f):
 def home():
     return render_template("index.html")
 
+# ------------------- Recipes
+
+
+@app.route("/recipes")
+def recipes():
+    recipes = list(mongo.db.recipes.find())
+
+    return render_template("recipes.html", recipes=recipes)
+
 # ------------------- Register
 
 # Credit:
@@ -77,7 +86,6 @@ def register():
 
             # put user into 'session' cookie
             session["user"] = request.form.get("username").lower()
-            session["user_id"] = str(existing_user["_id"])
             flash("Welcome, {} ! Let's start creating!".format(
                 request.form.get("username")))
             return redirect(url_for("profile", username=session["user"]))
@@ -105,7 +113,6 @@ def login():
                     existing_user['password'], request.form.get(
                         "password")):
                     session["user"] = request.form.get("username").lower()
-                    session["user_id"] = str(existing_user["_id"])
                     flash("Welcome back {} ! Let's start creating!".format(
                             request.form.get("username")))
                     return redirect(url_for(
@@ -136,10 +143,8 @@ def profile(username):
     # grab the session user's username form db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    user = mongo.db.users.find_one(
-        {"username": session["user"]})
     recipes = list(mongo.db.recipes.find(
-        {"created_by": ObjectId(user["_id"])}))
+        {"created_by": session["user"]}))
 
     if session["user"]:
         return render_template(
@@ -167,7 +172,6 @@ def logout():
 @login_required
 def add_recipe():
     if request.method == "POST":
-        user = mongo.db.users.find_one({"username": session["user"]})
         recipe = {
             "recipe_name": request.form.get("recipe_name"),
             "image_url": request.form.get("image_url"),
@@ -177,7 +181,7 @@ def add_recipe():
             "method": request.form.getlist("method"),
             "prep_time": request.form.get("prep_time"),
             "serves": request.form.get("serves"),
-            "created_by": ObjectId(user["_id"])
+            "created_by": session["user"]
         }
 
         mongo.db.recipes.insert_one(recipe)
