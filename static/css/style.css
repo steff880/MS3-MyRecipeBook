@@ -439,6 +439,15 @@ header .brand-logo,
     color: #6A7359;
 }
 
+.recipe-info .ingredients-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 300px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
 /* Footer */
 
 .page-footer {
