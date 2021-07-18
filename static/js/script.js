@@ -85,3 +85,10 @@ const checkIfPasswordsMatch = () => {
   }
 }
 
+// Function to take user back to previous page
+
+const takeMeBack = () => {
+  window.history.back();
+}
+
+document.getElementById("back-btn").addEventListener('click', takeMeBack)
