@@ -423,6 +423,15 @@ header .brand-logo,
 
 /* Recipe Info Section In Full Recipe Page */
 
+.recipe-info .panel-ingredients {
+    width: 100%;
+    min-height: 400px;
+    margin-top: 10px;
+    background-color: #f5e9e9;
+    border-radius: 12px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
 .recipe-info .ing-heading,
 .method-heading {
     font-size: 1.9em;
