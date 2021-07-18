@@ -365,6 +365,7 @@ header .brand-logo,
     border-radius: 10px;
     background-color: #f5e9e9;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    min-height: 290px;
 }
 
 .intro .img-box-recipe {
@@ -387,6 +388,10 @@ header .brand-logo,
 .recipe-url {
     color: #6A7359;
     font-weight: 500;
+}
+
+.back-btn-row {
+    margin-top: 40px;
 }
 
 .btn-edit,

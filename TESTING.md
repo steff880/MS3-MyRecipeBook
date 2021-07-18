@@ -54,3 +54,13 @@ Issue with text overflowing
 - Fix:
 
 Add ` overflow: auto; ` to element with class **panel-ingredients**
+
+- Bug:
+
+The element with class **card-panel-full-recipe** desn't have a correct height when user viewing the recipe is not who created it. If a user views his own recipe then there are edit and delete buttons on top of back button. This is creating a difference in height.
+
+![Card Panel](assets/img-readme/card-panel-bug.png)
+
+- Fix:
+
+Add ` margin-top: 40px; ` to **back-btn-row** class, to give some space from the text on top and ` min-height: 290px; ` to **card-panel-full-recipe** class, to fix the height issue. 
