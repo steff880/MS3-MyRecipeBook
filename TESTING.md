@@ -43,3 +43,14 @@ Issue with cards on Profile page
 - Fix:
 
 Decided to use Materialize card and add some custom styling 
+
+
+- Bug:
+
+Issue with text overflowing 
+
+![Oveflow bug](assets/img-readme/overflow-bug.png)
+
+- Fix:
+
+Add ` overflow: auto; ` to element with class **panel-ingredients**
