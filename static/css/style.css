@@ -423,7 +423,12 @@ header .brand-logo,
 
 /* Recipe Info Section In Full Recipe Page */
 
-
+.recipe-info .ing-heading,
+.method-heading {
+    font-size: 1.9em;
+    font-weight: 800;
+    color: #6A7359;
+}
 
 /* Footer */
 
