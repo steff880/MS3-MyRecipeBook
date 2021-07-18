@@ -67,7 +67,8 @@
         <div class="col s12 m6 xl5">
             <div class="panel-ingredients">
                 <div class="col s12">
-                    <h3 class="ing-heading center-align">Ingredients</h3>
+                    <h3 class="ing-heading center-align">
+                        Ingredients <span class="img-cont"><img src="{{ url_for('static', filename='images/mint-leaf.png') }}" alt=""></span></h3>
                 </div>
                 <div class="col s12 ingredients-list">
                     {% for ingredient in recipe.ingredients %}
