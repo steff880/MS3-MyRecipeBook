@@ -569,6 +569,12 @@ header .brand-logo,
     .btn-delete {
         padding: 10px;
     }
+
+    .container .form-container.add-recipe-container,
+    .container .form-container.edit-recipe-container {
+        padding: 40px 0;
+        overflow: visible;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
