@@ -197,6 +197,7 @@ def add_recipe():
 
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
+@login_required
 def edit_recipe(recipe_id):
     """
     User can edit their recipe
@@ -224,6 +225,18 @@ def edit_recipe(recipe_id):
     return render_template(
         "edit_recipe.html", recipe=recipe, categories=categories)
 
+
+# -------------------- Delete Recipe
+
+
+@app.route("/delete_recipe/<recipe_id>")
+@login_required
+def delete_recipe(recipe_id):
+    # Allow user to delete their recipe
+
+    mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
+    flash("Recipe Deleted!")
+    return redirect(url_for("profile", username=session["user"]))
 
 # ------------------ Full recipe page
 
