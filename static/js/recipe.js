@@ -1,4 +1,6 @@
+// Credit:
 // Code inspired from https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/static/js/recipe.js
+
 // Declare global variables
 
 // Set max ingredients
@@ -26,29 +28,20 @@ const appendIngredient = (e) => {
             <i class="fas fa-list-ul prefix form-icon"></i>
             <input type="text" id="ingredients" name="ingredients" minlength="3" class="validate" required>
             <span class="helper-text grey-text darken-3"> Enter new ingredient</span>
-            <a id="delete-btn" href="#" class="remove-field text-shadow">Delete <i class="fas fa-trash-alt"></i></a>`;
+            <a href="#" class="remove-field text-shadow">Delete <i class="fas fa-trash-alt"></i></a>`;
 
         ingredientRow.append(newIngredientField);
 
     }
 }
 
-// Code inspired from https://stackoverflow.com/questions/30601620/adding-an-event-listener-to-an-element-that-doesnt-exist-yet-in-vanilla-javascr
 // Delete New Ingredient
 
-const deleteIngredient = (event) => {
-    event.preventDefault();
-    // Get clicked element
-    let element = event.target;
-    // check if clicked element has the class we need
-    if (element.classList.contains('remove-field')) {
-        // remove last ingredient
-        if (ingredientRow.children.length > 1) {
-            ingredientRow.lastChild.remove();
-            ingredient--;
-        }
-    }
-}
+$(ingredientRow).on('click', '.remove-field', function(e) {
+    e.preventDefault();
+    $(this).parent('div').remove();
+    ingredient--;
+});
 
 // Append new steps in Method
 
@@ -68,7 +61,7 @@ const addNewStep = (e) => {
             <textarea id="method" name="method" class="materialize-textarea validate" minlength="3"
                 maxlength="300" rows="2" required></textarea>
             <span class="helper-text grey-text darken-3"> Enter new method step</span>
-            <a id="delete-step-btn" href="#" class="remove-step text-shadow">Delete <i class="fas fa-trash-alt"></i></a>`;
+            <a href="#" class="remove-step text-shadow">Delete <i class="fas fa-trash-alt"></i></a>`;
         // append to parent element
         methodRow.append(newStepField);
     }
@@ -76,24 +69,14 @@ const addNewStep = (e) => {
 
 // Delete step in method
 
-const deleteStep = (event) => {
-    event.preventDefault();
-    let element = event.target;
-
-    if (element.classList.contains('remove-step')) {
-
-        if (methodRow.children.length > 1) {
-            methodRow.lastChild.remove();
-            step--;
-        }
-    }
-}
+$(methodRow).on('click', '.remove-step', function(e) {
+    e.preventDefault();
+    $(this).parent('div').remove();
+    step--;
+});
 
 // Event Listeners
-methodRow.addEventListener('click', deleteStep)
 
 addStep.addEventListener('click', addNewStep)
-
-ingredientRow.addEventListener('click', deleteIngredient);
 
 addIngredient.addEventListener('click', appendIngredient);
