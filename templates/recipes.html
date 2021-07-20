@@ -12,29 +12,57 @@
     </div>
 </div>
 
+<!-- Search -->
 
-<section class="recipes">
-    <div class="row">
-        {% for recipe in recipes %}
-                <div class="col s12 m6 l6 xl4">
-                    <div class="card medium recipe-card">
-                        <div class="card-image">
-                            <img src="{{ recipe.image_url }}" alt="{{ recipe.recipe_name }}">
-                            <span class="card-title">{{ recipe.category }}</span>
-                        </div>
-                        <div class="card-content content center-align">
-                            <h3 class="recipe-heading">{{ recipe.recipe_name }}</h3>
-                        </div>
-                        <div class="card-action btn-box center-align">
-                            <a class="full-recipe-btn text-shadow"
-                                href="{{ url_for('full_recipe', recipe_id=recipe._id) }}">Full Recipe</a>
+<section class="search">
+    <div class="row card-panel">
+        <form class="col s12" action="{{ url_for('search') }}" method="POST">
+            <div class="row valign-wrapper center-align">
+                <div class="input-field col s12">
+                    <i class="fas fa-search prefix"></i>
+                    <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                    <label for="query">Search Recipes</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <a href="{{ url_for('recipes') }}">Reset</a>
+                    <button type="submit"><i class="fas fa-search-left"></i>Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% if recipes|length > 0 %}
+    <section class="recipes">
+        <div class="row">
+            {% for recipe in recipes %}
+                    <div class="col s12 m6 l6 xl4">
+                        <div class="card medium recipe-card">
+                            <div class="card-image">
+                                <img src="{{ recipe.image_url }}" alt="{{ recipe.recipe_name }}">
+                                <span class="card-title">{{ recipe.category }}</span>
+                            </div>
+                            <div class="card-content content center-align">
+                                <h3 class="recipe-heading">{{ recipe.recipe_name }}</h3>
+                            </div>
+                            <div class="card-action btn-box center-align">
+                                <a class="full-recipe-btn text-shadow"
+                                    href="{{ url_for('full_recipe', recipe_id=recipe._id) }}">Full Recipe</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
+    </section>
+{% else %}
+    <div class="row">
+        <div class="col s12">
+            <h3 class="center-align">No Results found</h3>
+        </div>
     </div>
-
-</section>
+{% endif %}
 
 
 
