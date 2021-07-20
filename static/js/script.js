@@ -7,6 +7,8 @@ $(document).ready(function () {
 
   $('select').formSelect();
 
+  $('.modal').modal();
+
 // Validate materialize select 
 // Credit: Code Institute Task Manager Project https://www.youtube.com/watch?v=CG36uQtAzkU&t=268s
 
