@@ -39,7 +39,7 @@
                 <div class="row btn-row-recipe">
                     <div class="col s12">
                         <div class="col s6 m6">
-                            <a class="btn-edit" href="">Edit <i class="fas fa-edit"></i></a>
+                            <a class="btn-edit" href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">Edit <i class="fas fa-edit"></i></a>
                         </div>
                         <div class="col s6 m6">
                             <a class="btn-delete" href="">Delete <i class="fas fa-trash-alt"></i></a>
