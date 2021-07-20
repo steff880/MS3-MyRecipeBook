@@ -508,6 +508,12 @@ header .brand-logo,
     line-height: 35px;
 }
 
+.modal-del-recipe .modal-text span {
+    color: #6A7359;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
 .modal-del-recipe .modal-footer {
     background-color: #f7e3e3;
 }
