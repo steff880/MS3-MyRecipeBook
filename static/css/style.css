@@ -488,6 +488,13 @@ header .brand-logo,
 }
 
 
+/* Delete recipe modal */
+
+.modal-del-recipe {
+    background-color: #f5e9e9;
+    border-radius: 10px;
+}
+
 /* Footer */
 
 .page-footer {
