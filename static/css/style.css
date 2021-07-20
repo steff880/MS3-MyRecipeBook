@@ -502,6 +502,12 @@ header .brand-logo,
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.modal-del-recipe .modal-text {
+    font-size: 1.1em;
+    color: #515251;
+    line-height: 35px;
+}
+
 /* Footer */
 
 .page-footer {
