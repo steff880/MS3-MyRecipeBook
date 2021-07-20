@@ -118,7 +118,7 @@
                 </div>
                 <div class="row btn-row valign-wrapper">
                     <div class="col s12 center-align">
-                        <a href="#" class="cancel-btn text-shadow">Cancel</a>
+                        <a href="{{ url_for('profile', username=session['user']) }}" class="cancel-btn text-shadow">Cancel</a>
                     </div>
                     <div class="col s12 center-align">
                         <button type="submit" class="add-recipe-btn text-shadow">Edit Recipe</button>
