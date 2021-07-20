@@ -553,6 +553,21 @@ header .brand-logo,
     margin-right: 15px;
 }
 
+.search .btn-reset,
+.btn-search {
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.search .btn-reset {
+    background-color: #ec7f7d;
+}
+
+.search .btn-search {
+    background-color: #fff;
+    color: #6A7359;
+}
+
 /* Footer */
 
 .page-footer {
