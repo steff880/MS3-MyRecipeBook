@@ -523,6 +523,22 @@ header .brand-logo,
     background-color: #f7e3e3;
 }
 
+/* Modal Cancel and Delete buttons */
+
+.modal-del-recipe .btn-cancel,
+.delete-btn {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.modal-del-recipe .btn-cancel {
+    color: #515251;
+}
+
+.modal-del-recipe .delete-btn {
+    color: #da3d3d;
+}
+
 /* Footer */
 
 .page-footer {
