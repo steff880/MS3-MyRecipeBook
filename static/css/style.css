@@ -568,6 +568,17 @@ header .brand-logo,
     color: #6A7359;
 }
 
+.no-results-row {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.no-results-heading {
+    color: #6A7359;
+    font-weight: 900;
+}
+
 /* Footer */
 
 .page-footer {
@@ -667,6 +678,10 @@ header .brand-logo,
     .content-container {
         min-height: 65vh;
     }
+
+    .no-results-row {
+        min-height: 400px;
+    }
 }
 
 
@@ -679,5 +694,9 @@ header .brand-logo,
 
     .card.medium {
         height: 450px;
+    }
+
+    .no-results-row {
+        min-height: 300px;
     }
 }
