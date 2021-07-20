@@ -539,6 +539,12 @@ header .brand-logo,
     color: #da3d3d;
 }
 
+/* Search */
+
+.search {
+    margin-top: 100px;
+}
+
 /* Footer */
 
 .page-footer {
