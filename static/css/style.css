@@ -495,6 +495,11 @@ header .brand-logo,
     border-radius: 10px;
 }
 
+/* Change height of modal */
+.modal {
+    max-height: 80%;
+}
+
 .modal-del-recipe .modal-heading {
     font-size: 2.1em;
     color: #6A7359;
@@ -590,6 +595,10 @@ header .brand-logo,
     .btn-edit,
     .btn-delete {
         padding: 10px;
+    }
+
+    .modal {
+        width: 85%;
     }
 }
 
