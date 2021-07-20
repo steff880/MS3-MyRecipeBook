@@ -4,22 +4,29 @@
 
 <div class="row">
     <div class="col s12">
-        <h3 class="center-align page-heading">Add Recipe</h3>
+        <h3 class="center-align page-heading">Edit Recipe</h3>
     </div>
 </div>
-
+<!-- Credit -->
+<!-- Inspired from https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/templates/recipe/edit_recipe.html -->
 <section class="form-container valign-wrapper">
     <div class="row form-row">
-        <form action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" method="POST" class="col s12 m10 offset-m1 l10 offset-l1">
+        <form action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" method="POST"
+            class="col s12 m10 offset-m1 l10 offset-l1">
             <div class="card-panel">
                 <!-- Select category -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-folder-open prefix form-icon"></i>
                         <select id="category_name" name="category_name" class="validate" required>
-                            <option value="" disabled selected>Choose Category</option>
+                            <option value="" disabled>Choose Category</option>
                             {% for category in categories %}
-                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                {% if category.category_name == recipe.category %}
+                                    <option value="{{ category.category_name }}" selected>{{ category.category_name }}
+                                    </option>
+                                {% else %}
+                                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                {% endif %}
                             {% endfor %}
                         </select>
                         <label for="category_name">Recipe Category</label>
@@ -30,7 +37,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix form-icon"></i>
                         <input type="text" id="recipe_name" name="recipe_name" minlength="3" maxlength="25"
-                            class="validate" required>
+                            class="validate" value="{{ recipe.recipe_name }}" required>
                         <label for="recipe_name">Recipe Name</label>
                     </div>
                 </div>
@@ -39,7 +46,12 @@
                     <div class="input-field col s12">
                         <!-- Pattern from https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/templates/recipe/create_recipe.html -->
                         <i class="fas fa-book-open prefix form-icon"></i>
-                        <input type="url" id="recipe_url" name="recipe_url" class="validate" pattern="https?://.+">
+                        {% if recipe.recipe_url %}
+                            <input type="url" id="recipe_url" name="recipe_url" class="validate" pattern="https?://.+"
+                                value="{{ recipe.recipe_url }}">
+                        {% else %}
+                            <input type="url" id="recipe_url" name="recipe_url" class="validate" pattern="https?://.+">
+                        {% endif %}
                         <label for="recipe_ur">Original Recipe URL</label>
                     </div>
                 </div>
@@ -48,7 +60,8 @@
                     <div class="input-field col s12">
                         <i class="far fa-image prefix form-icon"></i>
                         <input type="url" id="image_url" name="image_url" class="validate" pattern="https?://.+"
-                            required>
+                            required value="{{ recipe.image_url }}">
+                        <span class="helper-text">Just paste a new URL, or keep the old one</span>
                         <label for="image_url">Recipe Image URL</label>
                     </div>
                 </div>
@@ -57,68 +70,81 @@
                     <div class="input-field col s12 m6">
                         <i class="fas fa-clock prefix form-icon"></i>
                         <select id="prep_time" name="prep_time" class="validate" required>
-                            <option value="" disabled selected>Select</option>
-                            <option value="15 min or less">15 min or less</option>
-                            <option value="20 min">20 min</option>
-                            <option value="30 min">30 min</option>
-                            <option value="40 min">40 min</option>
-                            <option value="50 min">50 min</option>
-                            <option value="60 min">60 min</option>
-                            <option value="70 min">70 min</option>
-                            <option value="80 min">80 min</option>
-                            <option value="90 min or more">90 min or more</option>
+                            <option value="{{ recipe.prep_time }}" selected>{{ recipe.prep_time }}</option>
+                            <option value="Less than 20 min">Less than 20 min</option>
+                            {% for time in range(20, 100, 10) %}
+                                <option value="{{time}}">{{time}} min</option>
+                            {% endfor %}
+                            <option value="90+ min">90+ min</option>
                         </select>
                         <label for="prep_time">Total time</label>
                     </div>
                     <div class="input-field col s12 m6">
                         <i class="fas fa-users prefix form-icon"></i>
                         <select id="serves" name="serves" class="validate" required>
-                            <option value="" disabled selected>Select</option>
-                            <option value="2 people or less">2 or less</option>
-                            <option value="3 people">3 people</option>
-                            <option value="4 people">4 people</option>
-                            <option value="5 people">5 people</option>
-                            <option value="6 people">6 people</option>
-                            <option value="7 people">7 people</option>
-                            <option value="8 people">8 people</option>
-                            <option value="9 people">9 people</option>
-                            <option value="10 people or more">10 people or more</option>
+                            <option value="{{ recipe.serves }}" selected>{{ recipe.serves }}</option>
+                            <option value="1 person">1 person</option>
+                            {% for num in range(2, 11, 1) %}
+                                <option value="{{num}} people">{{num}} people</option>
+                            {% endfor %}
+                            <option value="10+ people">10+ people</option>
                         </select>
                         <label for="serves">Number of serves</label>
                     </div>
                 </div>
                 <!-- Ingredients -->
                 <div id="ingredient-row" class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-list-ul prefix form-icon"></i>
-                        <input type="text" id="ingredients" name="ingredients" minlength="3" class="validate" required>
-                        <label for="ingredients">Ingredients</label>
+                    {% for ingredient in recipe.ingredients %}
+                        <div class="input-field col s12">
+                            <i class="fas fa-list-ul prefix form-icon"></i>
+                            <input type="text" id="ingredients" name="ingredients" minlength="3" class="validate"
+                                value="{{ ingredient }}" required>
+                        {% if loop.index == 1 %}
+                        <!-- Prevent repetition -->
+                            <label for="ingredients">Ingredients</label>
+                        {% endif %}
+                        {% if loop.index != 1 %}
+                            <a href="#" id="delete-ing-btn" class="remove-field text-shadow">Delete <i
+                                    class="fas fa-trash-alt"></i></a>
+                        {% endif %}
                     </div>
+                    {% endfor %}
                 </div>
                 <!-- Add new ingredient -->
                 <div class="row">
                     <div class="col s12 right-align">
-                        <a id="add-ingredient" class="add-ingredient-btn text-shadow" href="#">Add Ingredient <i class="fas fa-plus-square"></i></a>
+                        <a id="add-ingredient" class="add-ingredient-btn text-shadow" href="#">Add Ingredient <i
+                                class="fas fa-plus-square"></i></a>
                     </div>
                 </div>
                 <!-- Method -->
                 <div id="method-row" class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-list-ol prefix form-icon"></i>
-                        <textarea id="method" name="method" class="materialize-textarea validate" minlength="3"
-                            maxlength="300" rows="2" required></textarea>
-                        <label for="method">Method</label>
-                    </div>
+                    {% for step in recipe.method %}
+                        <div class="input-field col s12">
+                            <i class="fas fa-list-ol prefix form-icon"></i>
+                            <textarea id="method" name="method" class="materialize-textarea validate" minlength="3"
+                                maxlength="300" rows="2"  required>{{ step }}</textarea>
+                            {% if loop.index == 1 %}
+                                <label for="method">Method</label>
+                            {% endif %}
+                            {% if loop.index != 1 %}
+                                <a id="delete-step-btn" href="#" class="remove-step text-shadow">Delete <i
+                                        class="fas fa-trash-alt"></i></a>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
                 </div>
                 <!-- Add step button -->
                 <div class="row">
                     <div class="col s12 right-align">
-                        <a id="add-step" class="add-step-btn text-shadow" href="#">Add Step <i class="fas fa-plus-square"></i></a>
+                        <a id="add-step" class="add-step-btn text-shadow" href="#">Add Step <i
+                                class="fas fa-plus-square"></i></a>
                     </div>
                 </div>
                 <div class="row btn-row valign-wrapper">
                     <div class="col s12 center-align">
-                        <a href="{{ url_for('profile', username=session['user']) }}" class="cancel-btn text-shadow">Cancel</a>
+                        <a href="{{ url_for('profile', username=session['user']) }}"
+                            class="cancel-btn text-shadow">Cancel</a>
                     </div>
                     <div class="col s12 center-align">
                         <button type="submit" class="add-recipe-btn text-shadow">Edit Recipe</button>
