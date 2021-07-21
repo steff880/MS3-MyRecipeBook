@@ -759,4 +759,9 @@ header .brand-logo,
     .no-results-row {
         min-height: 300px;
     }
+
+    .hero {
+        max-width: 70%;
+        margin: 0 auto;
+    }
 }
