@@ -251,6 +251,18 @@ header .brand-logo,
     color: #515251;
 }
 
+/* If user has no recipes */
+
+.my-recipes .no-recipes-heading {
+    font-size: 2em;
+    font-weight: 600;
+    color: #515251;
+}
+
+.my-recipes .no-recipes-text {
+    font-size: 1.5em;
+    color: #515251;
+}
 
 .btn-add-recipe {
     padding: 10px 20px;

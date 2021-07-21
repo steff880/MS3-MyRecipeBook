@@ -28,7 +28,16 @@
 
 <section class="my-recipes">
     <div class="row">
-        {% for recipe in recipes %}
+        {% if recipes|length == 0 %}
+        <div class="col s12 center-align">
+            <h5 class="no-recipes-heading">Hey <span>{{ username }}!</span> <span>😎</span></h5>
+            <br>
+            <p class="no-recipes-text">Ready to create something delicious?</p>
+            <br>
+            <p class="no-recipes-text">Simply click the button above <span>☝</span></p>
+        </div>
+        {% else %}
+            {% for recipe in recipes %}
                 <div class="col s12 m6 l6 xl4">
                     <div class="card medium recipe-card">
                         <div class="card-image">
@@ -45,7 +54,8 @@
                         </div>
                     </div>
                 </div>
-        {% endfor %}
+            {% endfor %}
+        {% endif %}
     </div>
 
 </section>
