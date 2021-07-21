@@ -670,6 +670,10 @@ header .brand-logo,
         padding: 40px 0;
         overflow: visible;
     }
+
+    .card.medium {
+        height: 450px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -682,6 +686,10 @@ header .brand-logo,
     .no-results-row {
         min-height: 400px;
     }
+
+    .card.medium {
+        height: 475px;
+    }
 }
 
 
@@ -693,7 +701,7 @@ header .brand-logo,
     }
 
     .card.medium {
-        height: 450px;
+        height: 510px;
     }
 
     .no-results-row {
