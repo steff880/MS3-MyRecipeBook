@@ -86,6 +86,28 @@ header .brand-logo,
     z-index: 0;
 }
 
+.home-info {
+    margin-top: 65px;
+}
+
+.home-info .text-box {
+    min-height: 200px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 15px 25px;
+    background-color: #f7e3e3;
+    border-radius: 10px;
+    border-left: 20px solid #ecc0c0;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.home-info .text-box .text-info {
+    font-size: 1.9em;
+    letter-spacing: 2px;
+    color: #6A7359;
+    font-weight: 500;
+}
+
 /* Register */
 
 .content-container {
@@ -702,7 +724,10 @@ header .brand-logo,
     .hero .hero-text-bg  {
         background-color: rgb(212 208 208 / 70%);
         padding: 0px 25px;
+    }
 
+    .home-info {
+        margin-top: 30px;
     }
 }
 
@@ -741,6 +766,10 @@ header .brand-logo,
 
     .hero .overlay {
         opacity: 0;
+    }
+
+    .home-main-box {
+        min-height: 50vh;
     }
 }
 

@@ -71,10 +71,10 @@
         </ul>
     </header>
 
-    {% block home %}
+    {% block home_hero %}
     {% endblock %}
     
-    <main class="container content-container {% block page_background %}{% endblock %}">
+    <main class="container content-container {% block page_background %}{% endblock %} {% block home %}{% endblock %}">
 
         <section>
             <!-- flash messages -->
