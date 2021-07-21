@@ -86,8 +86,6 @@ header .brand-logo,
     z-index: 0;
 }
 
-
-
 /* Register */
 
 .content-container {
@@ -699,6 +697,12 @@ header .brand-logo,
 
     .hero .overlay {
         opacity: 1;
+    }
+
+    .hero .hero-text-bg  {
+        background-color: rgb(212 208 208 / 70%);
+        padding: 0px 25px;
+
     }
 }
 
