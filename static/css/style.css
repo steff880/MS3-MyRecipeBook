@@ -58,12 +58,35 @@ header .brand-logo,
 .hero {
     width: 100%;
     height: 500px;
-    background: url(../images/hero-img.jpg) no-repeat center center fixed;
+    background: url(../images/hero-img.jpg) no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
+.hero .hero-heading {
+    position: relative;
+    color: #6A7359;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 2px;
+    z-index: 7;
+}
+
+.hero .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    z-index: 0;
+}
+
+
 
 /* Register */
 
@@ -668,6 +691,15 @@ header .brand-logo,
     .modal {
         width: 85%;
     }
+
+    .hero .hero-heading {
+        font-size: 2.2em;
+        padding-left: 15px;
+    }
+
+    .hero .overlay {
+        opacity: 1;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -701,6 +733,10 @@ header .brand-logo,
 
     .card.medium {
         height: 475px;
+    }
+
+    .hero .overlay {
+        opacity: 0;
     }
 }
 
