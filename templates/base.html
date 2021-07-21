@@ -32,12 +32,17 @@
                 <ul class="right hide-on-med-and-down">
                     <li class="{% block nav_home %}{% endblock %}"><a class="menu-link"
                             href="{{ url_for('home') }}">Home</a></li>
-                    <li class="{% block nav_recipes %}{% endblock %}"><a class="menu-link" href="{{ url_for('recipes') }}">Recipes</a></li>
+                    <li class="{% block nav_recipes %}{% endblock %}"><a class="menu-link"
+                            href="{{ url_for('recipes') }}">Recipes</a></li>
                     {% if session.user %}
                         <li class="{% block nav_profile %}{% endblock %}"><a class="menu-link"
                                 href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                         <li><a class="menu-link" href="{{ url_for('logout') }}">Logout</a></li>
-                        <li><a class="menu-link" href="#">Manage Categories</a></li>
+                        {% if session.is_admin %}
+                            <li class="{% block nav_manage_categories %}{% endblock %}"><a class="menu-link"
+                                    href="{{ url_for('get_categories') }}">Manage
+                                    Categories</a></li>  
+                        {% endif %}
                     {% else %}
                         <li class="{% block nav_register %}{% endblock %}"><a class="menu-link"
                                 href="{{ url_for('register') }}">Register</a></li>
@@ -61,7 +66,10 @@
                 <li class="{% block sidenav_profile %}{% endblock %}"><a class="menu-link"
                         href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 <li><a class="menu-link" href="{{ url_for('logout') }}">Logout</a></li>
-                <li><a class="menu-link" href="#">Manage Categories</a></li>
+                {% if session.user and is_admin %}
+                <li class="{% block sidenav_manage_categories %}{% endblock %}"><a class="menu-link"
+                        href="{{ url_for('get_categories') }}">Manage Categories</a></li>
+                {% endif %}
             {% else %}
                 <li class="{% block sidenav_register %}{% endblock %}"><a class="menu-link"
                         href="{{ url_for('register') }}">Register</a></li>

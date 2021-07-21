@@ -121,6 +121,12 @@ def login():
                     existing_user['password'], request.form.get(
                         "password")):
                     session["user"] = request.form.get("username").lower()
+                    user = mongo.db.users.find_one(
+                        {"username": session["user"]})
+                    if user["is_admin"]:
+                        session["is_admin"] = True
+                    else:
+                        session["is_admin"] = False
                     flash("Welcome back {} ! Let's start creating!".format(
                             request.form.get("username")))
                     return redirect(url_for(
@@ -145,7 +151,7 @@ def login():
 # --------------------- Profile
 
 
-@app.route("/profile<username>", methods=["GET", "POST"])
+@app.route("/profile/<username>", methods=["GET", "POST"])
 @login_required
 def profile(username):
     # grab the session user's username form db
@@ -254,6 +260,25 @@ def delete_recipe(recipe_id):
 def full_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("full_recipe.html", recipe=recipe)
+
+
+# ------------ Categories
+
+
+@app.route("/get_categories")
+@login_required
+def get_categories():
+
+    if "user" in session:
+        user = mongo.db.users.find_one({"username": session["user"]})
+        if user["is_admin"]:
+            categories = list(
+                mongo.db.categories.find().sort("category_name", 1))
+            return render_template(
+                "get_categories.html", categories=categories, user=user)
+        else:
+            flash("You do not have permission to view this page")
+            return redirect(url_for("profile", username=session["user"]))
 
 
 # ---------- Run app
