@@ -33,7 +33,7 @@ const appendIngredient = (e) => {
         ingredientRow.append(newIngredientField);
 
     }
-}
+};
 
 // Delete New Ingredient
 
@@ -65,7 +65,7 @@ const addNewStep = (e) => {
         // append to parent element
         methodRow.append(newStepField);
     }
-}
+};
 
 // Delete step in method
 
@@ -77,6 +77,6 @@ $(methodRow).on('click', '.remove-step', function(e) {
 
 // Event Listeners
 
-addStep.addEventListener('click', addNewStep)
+addStep.addEventListener('click', addNewStep);
 
 addIngredient.addEventListener('click', appendIngredient);

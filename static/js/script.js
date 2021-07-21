@@ -85,10 +85,10 @@ const checkIfPasswordsMatch = () => {
     regButton.removeAttribute('disabled', true);
     regButton.classList.remove('btn-disabled');
   }
-}
+};
 
 // Function to take user back to previous page
 
 const takeMeBack = () => {
   window.history.back();
-}
+};
