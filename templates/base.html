@@ -53,8 +53,10 @@
             <li>
                 <h4 class="center-align sidenav-logo text-shadow">MyRecipeBook</h4>
             </li>
-            <li><a class="menu-link" href="{{ url_for('home') }}">Home</a></li>
-            <li class="{% block sidenav_recipes %}{% endblock %}"><a class="menu-link" href="{{ url_for('recipes') }}">Recipes</a></li>
+            <li class="{% block sidenav_home %}{% endblock %}"><a class="menu-link"
+                    href="{{ url_for('home') }}">Home</a></li>
+            <li class="{% block sidenav_recipes %}{% endblock %}"><a class="menu-link"
+                    href="{{ url_for('recipes') }}">Recipes</a></li>
             {% if session.user %}
                 <li class="{% block sidenav_profile %}{% endblock %}"><a class="menu-link"
                         href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
@@ -69,6 +71,8 @@
         </ul>
     </header>
 
+    {% block home %}
+    {% endblock %}
     
     <main class="container content-container {% block page_background %}{% endblock %}">
 
