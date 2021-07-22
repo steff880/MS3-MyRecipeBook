@@ -47,6 +47,12 @@ header .brand-logo,
     font-weight: 800;
 }
 
+/* Add a link to close sidenav */
+
+.sidenav .menu-link i {
+    font-size: 1.3em;
+}
+
 /* Custom text-shadow */
 
 .text-shadow {

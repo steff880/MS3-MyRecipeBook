@@ -76,6 +76,10 @@
                 <li class="{% block sidenav_login %}{% endblock %}"><a class="menu-link"
                         href="{{ url_for('login') }}">Login</a></li>
             {% endif %}
+            <!-- Link to close sidenav -->
+                <li class="sidenav-close">
+                    <a class="menu-link" href="#"><i class="far fa-window-close"></i></a>
+                </li>
         </ul>
     </header>
 
