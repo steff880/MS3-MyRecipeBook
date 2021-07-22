@@ -203,6 +203,16 @@ _Please note that currently Admin user can only add **categories**_
 
     ![Login](assets/img-readme/login.png)
 
+- Profile
+
+    - Profile page allows the user to:
+
+        - View the recipes created by them
+        - Use the **Add Recipe** button to create a new recipe.
+        - Use the full recipe button to view the full recipe.
+
+    ![Profile](assets/img-readme/profile.png)
+
 
 ## Technologies Used
 ### Languages
