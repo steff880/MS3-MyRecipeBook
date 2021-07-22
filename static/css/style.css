@@ -1,8 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -21,11 +29,13 @@ header nav {
 
 nav.custom-bg {
     background-color: rgba(255, 255, 255, 0.28);
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
 }
 
 header .sidenav {
     background: rgba(243, 222, 222, 0.3);
+    -webkit-backdrop-filter: blur(35px);
     backdrop-filter: blur(35px);
 }
 
@@ -66,8 +76,14 @@ header .brand-logo,
     height: 500px;
     background: url(../images/hero-img.jpg) no-repeat center center;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
 }
@@ -100,6 +116,7 @@ header .brand-logo,
     background-color: #f7e3e3;
     border-radius: 10px;
     border-left: 20px solid #ecc0c0;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -114,13 +131,18 @@ header .brand-logo,
     color: #515251;
     padding: 10px 25px;
     font-weight: 600;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
+    background-image: -o-linear-gradient(45deg, #ecc0c0, #dcdcdc);
     background-image: linear-gradient(45deg, #ecc0c0, #dcdcdc);
+    -webkit-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
     transition: 0.1s ease-in;
 }
 
 .home-info .btn-cta:hover {
+    background: -o-linear-gradient(45deg, #dcdcdc, #ecc0c0);
     background: linear-gradient(45deg, #dcdcdc, #ecc0c0);
     padding: 12px 27px;
 }
@@ -153,11 +175,13 @@ header .brand-logo,
     padding: 15px 0;
     margin-top: 30px;
     background: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
     border-radius: 24px;
     font-size: 2em;
     font-weight: 900;
     color: #6A7359;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 1px;
 }
@@ -175,8 +199,10 @@ header .brand-logo,
 
 .form-container .card-panel {
     background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
     border-radius: 24px;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -193,11 +219,14 @@ header .brand-logo,
     font-weight: 500;
     color: #fff;
     background-color: #6A7359;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
 }
 
 .form-container .btn-register:hover {
     cursor: pointer;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
     background-color: #515251;
 }
@@ -226,6 +255,7 @@ header .brand-logo,
 
 .form-container .card-panel-login {
     background: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(14px);
     backdrop-filter: blur(14px);
 
 }
@@ -242,12 +272,14 @@ header .brand-logo,
 .circle-top {
     top: -90px;
     left: -80px;
+    background: -o-linear-gradient(130deg, #eab0b1, #ffdfdf33, #ffffffb0);
     background: linear-gradient(320deg, #eab0b1, #ffdfdf33, #ffffffb0);
 }
 
 .circle-bottom {
     bottom: -90px;
     right: -65px;
+    background: -o-linear-gradient(350deg, #eab0b1, #ffdfdf33, #ffffffb0);
     background: linear-gradient(100deg, #eab0b1, #ffdfdf33, #ffffffb0);
 }
 
@@ -276,7 +308,10 @@ header .brand-logo,
     color: #6A7359;
     border-radius: 12px;
     font-size: 1.1em;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
     transition: 0.4s ease;
 }
 
@@ -297,6 +332,7 @@ header .brand-logo,
     background-color: #f5e9e9;
     border: none;
     border-radius: 10px;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -361,6 +397,7 @@ header .brand-logo,
     background-color: #515251;
     color: #fff;
     border-radius: 12px;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     margin-left: 23px;
 }
@@ -386,7 +423,10 @@ header .brand-logo,
     border-radius: 12px;
     color: #fff;
     background-color: #515251;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 
@@ -406,8 +446,11 @@ header .brand-logo,
     border-radius: 8px;
     outline: none;
     background-color: #515251;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
     cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 
@@ -416,6 +459,7 @@ header .brand-logo,
     border-radius: 8px;
     background-color: #6A7359;
     color: #fff;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -426,7 +470,10 @@ header .brand-logo,
     background-color: #e06666;
     color: #fff;
     border-radius: 8px;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 
@@ -445,12 +492,14 @@ header .brand-logo,
     background-color: #f7e3e3;
     border-radius: 10px;
     min-height: 30vh;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 .card-panel-full-recipe {
     border-radius: 10px;
     background-color: #f5e9e9;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     min-height: 290px;
 }
@@ -461,12 +510,14 @@ header .brand-logo,
     margin-top: 4px;
     border-radius: 14px;
     overflow: hidden;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .intro .img-box-recipe img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -487,7 +538,10 @@ header .brand-logo,
     padding: 10px 20px;
     color: #fff;
     border-radius: 10px;
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 
@@ -523,6 +577,7 @@ header .brand-logo,
     margin-bottom: 20px;
     background-color: #f5e9e9;
     border-radius: 12px;
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     overflow: auto;
 }
@@ -540,8 +595,15 @@ header .brand-logo,
 }
 
 .recipe-info .ingredients-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     min-height: 300px;
     text-align: left;
@@ -555,11 +617,14 @@ header .brand-logo,
     margin: 15px 0;
     border-radius: 10px;
     background-color: #f5e9e9;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .recipe-info .heading-panel {
     padding-bottom: 5px;
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
     transform: translateY(-15px);
 }
 
@@ -634,6 +699,7 @@ header .brand-logo,
 
 .search .search-panel {
     background-color: #f7e3e3;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin-left: 15px;
@@ -643,6 +709,7 @@ header .brand-logo,
 .search .btn-reset,
 .btn-search {
     border-radius: 10px;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -670,8 +737,15 @@ header .brand-logo,
 
 .categories {
     min-height: 56vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -680,13 +754,19 @@ header .brand-logo,
 }
 
 .categories .row-categories .category-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     min-height: 100px;
     border-radius: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #f7e3e3;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -699,12 +779,18 @@ header .brand-logo,
     font-weight: 900;
     letter-spacing: 2px;
     background-color: #f5e9e9;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
 
 .categories .row-categories .category-box:hover .category-name {
+    -webkit-transform: skewX(-10deg) scale(1.1);
+    -ms-transform: skewX(-10deg) scale(1.1);
     transform: skewX(-10deg) scale(1.1);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -713,6 +799,8 @@ header .brand-logo,
 
 .error {
     min-height: 50vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 110px 0;
 }
@@ -722,6 +810,8 @@ header .brand-logo,
     font-weight: 800;
     color: #515251;
     line-height: 40px;
+    -webkit-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
     transform: translateY(-100px);
 }
 
@@ -735,6 +825,7 @@ header .brand-logo,
 /* Footer */
 
 .page-footer {
+    background: -o-linear-gradient(21deg, rgb(239, 191, 191), rgba(176, 188, 194, 0.61));
     background: linear-gradient(69deg, rgb(239, 191, 191), rgba(176, 188, 194, 0.61));
     padding: 20px 0;
 }
@@ -759,10 +850,14 @@ header .brand-logo,
 .social-links i {
     color: #6A7359;
     font-size: 1.7em;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
     transition: 0.2s ease;
 }
 
 .social-links:hover i {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transform: scale(1.2);
     color: #515251;
 }
