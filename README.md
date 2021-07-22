@@ -127,6 +127,34 @@ _Please note that currently Admin user can only add **categories**_
 
 [Wireframes part 2](https://github.com/steff880/MS3-MyRecipeBook/blob/main/assets/wireframes/wireframes-part2.png)
 ## Features
+
+- Each page has a responsive and fixed to the top navigation, in order for the user to be able at any moment to navigate to a different page.
+- A class *active* is given to the current page link in the navigation, highlighting it for the user.
+
+![Navigation](assets/img-readme/show-navigation.png)
+
+![SideNavigation](assets/img-readme/side-navigation.png)
+
+- The **_Footer_** of the site contains social media links and and Newsletter subscription
+
+![Footer](assets/img-readme/footer.png)
+
+- If the user is logged in their account, will have access to:
+    - Profile page
+    - Add Recipe page
+    - Update Recipe
+    - Delete Recipe
+    - View Full Recipe
+    - If the user is _admin_, then will have access to Manage Categories, where new categories can be added.
+- The website uses _cards_ to display recipes, giving short info for the user:
+    - Recipe image
+    - Recipe Category
+    - Recipe Name
+    - Created by
+    - A button to view full recipe
+
+![RecipeCards](assets/img-readme/recipe-cards.png)
+
 ## Technologies Used
 ### Languages
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
