@@ -301,6 +301,23 @@ If user is **admin**, he/she will have access to _Manage Categories_.
     ![AddCategory](assets/img-readme/add-category.png)
 
 
+### Features to implement in the future
+
+- Manage Profile
+
+    - Add profile image
+    - Edit username or password
+    - Delete account
+
+- More admin features:
+
+    - Be able to delete any recipe
+    - Be able to delete category
+    - Be able to edit category
+
+- By using EmailJS, to send an email to the user after they subscribe for the newsletter.
+
+
 
 ## Technologies Used
 ### Languages
