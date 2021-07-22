@@ -1,3 +1,5 @@
+<h1 align="center">MyRecipeBook</h1>
+
 ![Responsive](assets/img-readme/responsive.png)
 
 ## UX 
@@ -9,7 +11,7 @@ Use _HTML5_, _CSS3_, _JavaScript_, _Python_, _Flask_, and _MongoDB_
 The user is looking for web-based app where they can:
 - Use CRUD convensions to:
     - Create a recipe
-    - Read(View) recipe
+    - Read recipe
     - Update(Edit) recipe
     - Delete recipe they created
 - Be able to search the database for recipes
@@ -32,7 +34,7 @@ The user is looking for web-based app where they can:
 ## Data Schema
 [MongoDB](https://www.mongodb.com/) was used for this project and schema design was created. See below:
 
-![Schema Design](assets/img-readme/schema-design.png)
+![Schema Design](assets/img-readme/updated-schema-design.png)
 
 ### Users Collection
 - Upon regisering, the user will provide:
