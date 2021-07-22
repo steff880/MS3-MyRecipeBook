@@ -316,6 +316,29 @@ def add_category():
         return redirect(url_for("profile", username=session["user"]))
 
 
+# --------- Newsletter Subscribtion
+# Inspired from:
+# https://github.com/juanstelling/MS3_breaktasty/blob/fe5b544beb648f153f69f362bf06b31bcc3e7b09/app.py
+
+@app.route("/subscribe", methods=["GET", "POST"])
+def subscribe():
+    if request.method == "POST":
+        # check for existing email
+        existing_email = mongo.db.subscribers.find_one(
+            {"email": request.form.get("email").lower()})
+
+        if existing_email:
+            flash("You already have a subcribtion!")
+            return redirect('home')
+        subscriber = {
+            "email": request.form.get("email").lower()
+        }
+        mongo.db.subscribers.insert_one(subscriber)
+
+    flash("Thank you for subscribing!")
+    return redirect(url_for('home'))
+
+
 # ---------- Run app
 
 

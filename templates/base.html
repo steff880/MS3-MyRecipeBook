@@ -114,7 +114,7 @@
         <div class="row">
             <div class="col s12 m6 l6">
                 <h5 class="white-text text-shadow">Subscribe for our newsletter</h5>
-                <form action="">
+                <form action="{{ url_for('subscribe') }}" method="POST">
                     <div class="input-field">
                         <!-- Pattern from  https://github.com/juanstelling/MS3_breaktasty/blob/master/templates/base.html -->
                         <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
