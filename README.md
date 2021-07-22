@@ -1,3 +1,5 @@
+![Responsive](assets/img-readme/responsive.png)
+
 ## UX 
 ### Project Goals
 The primary goal of **MyRecipeBook**, is to allow the users to _create_, _save_, _search_ and _view_ their favourite recipes in one place.
