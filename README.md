@@ -279,6 +279,28 @@ _Please note that currently Admin user can only add **categories**_
     ![DeleteRecipe](assets/img-readme/delete-recipe.png)
 
 
+If user is **admin**, he/she will have access to _Manage Categories_.
+
+- Manage Categories:
+
+    - Allows the user to:
+
+        - View all categories
+        - Add new category
+
+    ![ManageCategories](assets/img-readme/manage-categories.png)
+
+- Add Category:
+
+    - Allows the user to:
+
+        - Add new category by filling up the form.
+        - Submit the form by using the **Add Category** button.
+        - Cancel and go back.
+    
+    ![AddCategory](assets/img-readme/add-category.png)
+
+
 
 ## Technologies Used
 ### Languages
