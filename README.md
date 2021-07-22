@@ -269,6 +269,15 @@ _Please note that currently Admin user can only add **categories**_
     ![EditRecipe](assets/img-readme/edit-recipe3.png)
 
 
+- Delete Recipe:
+
+    - Allows the user to:
+
+        - Delete the recipe they have created.
+        - Cancel and close the modal.
+    
+    ![DeleteRecipe](assets/img-readme/delete-recipe.png)
+
 
 
 ## Technologies Used
