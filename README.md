@@ -155,6 +155,18 @@ _Please note that currently Admin user can only add **categories**_
 
 ![RecipeCards](assets/img-readme/recipe-cards.png)
 
+### Existing Features
+
+- Home Page
+
+    - Hero Image with a welcome text
+
+    ![Hero](assets/img-readme/hero-image.png)
+
+    - Short text prompting user to create an account and start adding recipes and **cta** buttons
+
+    ![ShortTextAndButtons](assets/img-readme/text-info-and-buttons.png)
+
 ## Technologies Used
 ### Languages
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
