@@ -340,6 +340,7 @@ def subscribe():
 
 
 # --------------- Error Handlers
+# From https://flask.palletsprojects.com/en/1.1.x/errorhandling/
 
 
 @app.errorhandler(404)
