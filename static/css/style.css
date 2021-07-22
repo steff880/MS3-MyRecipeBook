@@ -709,7 +709,28 @@ header .brand-logo,
 }
 
 
+/* Error Pages */
 
+.error {
+    min-height: 50vh;
+    justify-content: center;
+    margin: 110px 0;
+}
+
+.error .error-heading {
+    font-size: 3.8em;
+    font-weight: 800;
+    color: #515251;
+    line-height: 40px;
+    transform: translateY(-100px);
+}
+
+.error .error-text {
+    font-size: 2em;
+    font-weight: 500;
+    color: #515251;
+    line-height: 50px;
+}
 
 /* Footer */
 
