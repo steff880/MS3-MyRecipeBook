@@ -30,22 +30,29 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i
                         class="fas fa-bars hamburger"></i></a>
                 <ul class="right hide-on-med-and-down">
+                     <!-- Home -->
                     <li class="{% block nav_home %}{% endblock %}"><a class="menu-link"
                             href="{{ url_for('home') }}">Home</a></li>
+                    <!-- Recipes -->
                     <li class="{% block nav_recipes %}{% endblock %}"><a class="menu-link"
                             href="{{ url_for('recipes') }}">Recipes</a></li>
                     {% if session.user %}
+                    <!-- Profile -->
                         <li class="{% block nav_profile %}{% endblock %}"><a class="menu-link"
                                 href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                     <!-- Logout -->
                         <li><a class="menu-link" href="{{ url_for('logout') }}">Logout</a></li>
                         {% if session.is_admin %}
+                         <!-- Manage Categories -->
                             <li class="{% block nav_manage_categories %}{% endblock %}"><a class="menu-link"
                                     href="{{ url_for('get_categories') }}">Manage
                                     Categories</a></li>  
                         {% endif %}
                     {% else %}
+                    <!-- Register -->
                         <li class="{% block nav_register %}{% endblock %}"><a class="menu-link"
                                 href="{{ url_for('register') }}">Register</a></li>
+                    <!-- Login -->
                         <li class="{% block nav_login %}{% endblock %}"><a class="menu-link"
                                 href="{{ url_for('login') }}">Login</a></li>
                     {% endif %}
@@ -58,21 +65,28 @@
             <li>
                 <h4 class="center-align sidenav-logo text-shadow">MyRecipeBook</h4>
             </li>
+            <!-- Home -->
             <li class="{% block sidenav_home %}{% endblock %}"><a class="menu-link"
                     href="{{ url_for('home') }}">Home</a></li>
+            <!-- Recipes -->
             <li class="{% block sidenav_recipes %}{% endblock %}"><a class="menu-link"
                     href="{{ url_for('recipes') }}">Recipes</a></li>
+            <!-- Profile -->
             {% if session.user %}
                 <li class="{% block sidenav_profile %}{% endblock %}"><a class="menu-link"
                         href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                <!-- Logout -->
                 <li><a class="menu-link" href="{{ url_for('logout') }}">Logout</a></li>
+                <!-- Manage Categories -->
                 {% if session.is_admin %}
                 <li class="{% block sidenav_manage_categories %}{% endblock %}"><a class="menu-link"
                         href="{{ url_for('get_categories') }}">Manage Categories</a></li>
                 {% endif %}
+                <!-- Register -->
             {% else %}
                 <li class="{% block sidenav_register %}{% endblock %}"><a class="menu-link"
                         href="{{ url_for('register') }}">Register</a></li>
+                <!-- Login -->
                 <li class="{% block sidenav_login %}{% endblock %}"><a class="menu-link"
                         href="{{ url_for('login') }}">Login</a></li>
             {% endif %}

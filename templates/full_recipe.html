@@ -43,7 +43,8 @@
                                     class="fas fa-edit"></i></a>
                         </div>
                         <div class="col s6 m6">
-                            <a class="btn-delete modal-trigger" href="#modal1">Delete <i class="fas fa-trash-alt"></i></a>
+                            <a class="btn-delete modal-trigger" href="#modal1">Delete <i
+                                    class="fas fa-trash-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -72,8 +73,11 @@
             <div class="panel-ingredients">
                 <div class="col s12">
                     <h3 class="ing-heading center-align">
-                        Ingredients<span class="img-cont"><img
-                                src="{{ url_for('static', filename='images/mint-leaf.png') }}" alt=""></span></h3>
+                        Ingredients
+                        <span class="img-cont">
+                            <img src="{{ url_for('static', filename='images/mint-leaf.png') }}" alt="Mint Leaf">
+                        </span>
+                    </h3>
                 </div>
                 <div class="col s12 ingredients-list">
                     {% for ingredient in recipe.ingredients %}
@@ -86,8 +90,11 @@
             <ol>
                 <li class="heading-panel">
                     <h3 class="center-align method-heading">
-                        Method<span class="img-cont"><img src="{{ url_for('static', filename='images/mint-leaf.png') }}"
-                                alt=""></span></h3>
+                        Method
+                        <span class="img-cont">
+                            <img src="{{ url_for('static', filename='images/mint-leaf.png') }}" alt="Mint Leaf">
+                        </span>
+                    </h3>
                 </li>
                 {% for step in recipe.method %}
                 <li class="step-panel">
@@ -104,13 +111,15 @@
 <div id="modal1" class="modal modal-del-recipe">
     <div class="modal-content">
         <h4 class="center-align modal-heading">Please confirm your choice?</h4>
-        <p class="center-align modal-text">Are you sure you want to delete <span>{{ recipe.recipe_name }}</span> recipe?</p>
+        <p class="center-align modal-text">Are you sure you want to delete <span>{{ recipe.recipe_name }}</span> recipe?
+        </p>
         <p class="center-align modal-text">After this you will not be able to get it back!</p>
         <p class="center-align modal-text">This change is permanent!</p>
     </div>
     <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat btn-cancel">Cancel</a>
-        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="waves-effect waves-green btn-flat delete-btn">Delete</a>
+        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"
+            class="waves-effect waves-green btn-flat delete-btn">Delete</a>
     </div>
 </div>
 

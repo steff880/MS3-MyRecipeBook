@@ -326,7 +326,9 @@ header .brand-logo,
 
 }
 
-.card.small .card-image, .card.medium .card-image, .card.large .card-image {
+.card.small .card-image,
+.card.medium .card-image,
+.card.large .card-image {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -367,7 +369,8 @@ header .brand-logo,
 
 /* change color of materialize select option */
 
-.dropdown-content li>a, .dropdown-content li>span {
+.dropdown-content li>a,
+.dropdown-content li>span {
     color: #6A7359;
 }
 
@@ -377,7 +380,7 @@ header .brand-logo,
 }
 
 /* Add ingredient button and add step btn */
-.add-ingredient-btn, 
+.add-ingredient-btn,
 .add-step-btn {
     padding: 10px 15px;
     border-radius: 12px;
@@ -387,7 +390,7 @@ header .brand-logo,
     transition: 0.3s ease;
 }
 
-.add-ingredient-btn:hover, 
+.add-ingredient-btn:hover,
 .add-step-btn:hover {
     background-color: #6A7359;
 }
@@ -544,7 +547,7 @@ header .brand-logo,
     text-align: left;
     padding-left: 20px;
     padding-bottom: 20px;
-  }
+}
 
 .recipe-info .heading-panel,
 .step-panel {
@@ -631,7 +634,7 @@ header .brand-logo,
 
 .search .search-panel {
     background-color: #f7e3e3;
-    box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin-left: 15px;
     margin-right: 15px;
@@ -655,7 +658,7 @@ header .brand-logo,
 .no-results-row {
     margin-top: 100px;
     margin-bottom: 100px;
-    
+
 }
 
 .no-results-heading {
@@ -795,7 +798,7 @@ header .brand-logo,
         opacity: 1;
     }
 
-    .hero .hero-text-bg  {
+    .hero .hero-text-bg {
         background-color: rgb(212 208 208 / 70%);
         padding: 0px 25px;
     }
@@ -811,6 +814,7 @@ header .brand-logo,
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
     .btn-edit,
     .btn-delete {
         padding: 10px;
