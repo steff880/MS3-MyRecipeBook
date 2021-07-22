@@ -177,6 +177,22 @@ _Please note that currently Admin user can only add **categories**_
 
     ![RecipeCards](assets/img-readme/recipe-cards.png)
 
+- Rgister
+
+    - Registration Form allows the user to:
+        
+        - Enter their desired username
+
+        - The password field uses [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/) to hash the password on entry and confirm password is validated using Javascript. If the passwords do not match, a disabled class is added to the Register button, preventing the user from submitting the form with incorrect password.
+
+        - Email Address field where the user has to enter their **email**
+
+        - Register button, to submit the form when all fields are filled correctly.
+
+    ![Register](assets/img-readme/register.png)
+
+
+
 ## Technologies Used
 ### Languages
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
