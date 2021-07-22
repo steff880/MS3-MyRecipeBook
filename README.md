@@ -33,6 +33,22 @@ The user is looking for web-based app where they can:
 
 _Please note that currently Admin user can only add **categories**_
 
+### Strategy
+
+- For this project, the targeted audiences are:
+    - Food Lovers
+    - People, who are passionate about cooking
+    - People of all ages
+    
+- The website enables the user to:
+    - Register or Log in to account
+    - View Recipes
+    - Search Recipes, by category or name, even by ingredients
+    - Create their own recipes and upload them to the database
+    - View the full recipe they have created, or someone elses
+    - Edit recipes they  have created
+    - Delete a recipe created by them
+
 
 ### Design
 - #### Typography
