@@ -167,6 +167,16 @@ _Please note that currently Admin user can only add **categories**_
 
     ![ShortTextAndButtons](assets/img-readme/text-info-and-buttons.png)
 
+- Rcipes
+
+    - A search bar where the user can search for recipes
+
+    ![SearchBar](assets/img-readme/search-bar.png)
+
+    - Recipe cards
+
+    ![RecipeCards](assets/img-readme/recipe-cards.png)
+
 ## Technologies Used
 ### Languages
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
