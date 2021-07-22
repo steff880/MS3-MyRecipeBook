@@ -230,6 +230,31 @@ _Please note that currently Admin user can only add **categories**_
 ![FullRecipe](assets/img-readme/full-recipe2.png)
 
 
+- Add Recipe
+
+    - Add Recipe page allows the user to:
+
+        - Fill the add recipe form by:
+
+            - Choosing a category
+            - Choosing recipe name
+            - Adding a link to the original recipe
+            - Adding a recipe image
+            - Selecting the total time to cook
+            - Selecting the number of people it serves
+            - Adding ingredients
+            - Adding method steps
+        
+        - Use the buttons to:
+
+            - Add new ingredient field, in order to insert every ingredient of the recipe.
+            - Add new step from the method.
+            - Cancel and go back.
+            - Submit the form by clicking the **add recipe button**.
+    
+    ![AddRecipe](assets/img-readme/add-recipe.png)
+
+
 
 
 ## Technologies Used
