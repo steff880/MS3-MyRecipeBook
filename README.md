@@ -49,6 +49,16 @@ _Please note that currently Admin user can only add **categories**_
     - Edit recipes they  have created
     - Delete a recipe created by them
 
+### Scope
+
+- What the user will look for:
+    - Easy navigation
+    - Welcoming Design
+    - Search the database for recipes
+    - Add their own recipe
+    - Manage recipes (Edit, Delete)
+    - Save and View full recipe
+    - Be able to Register and Login
 
 ### Design
 - #### Typography
