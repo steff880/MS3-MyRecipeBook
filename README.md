@@ -27,6 +27,13 @@ The user is looking for web-based app where they can:
 - Able to View my own recipes
 - Able to Edit recipe
 - Able to Delete a recipe(s) I have created.
+
+**_As an Admin user of the site, I want to:_**
+- Be able to add new categories
+
+_Please note that currently Admin user can only add **categories**_
+
+
 ### Design
 - #### Typography
     - The primary font used is **Poppins**, and **Sans Serif** is used as a fallback font.
