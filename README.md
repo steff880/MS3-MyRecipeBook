@@ -254,6 +254,20 @@ _Please note that currently Admin user can only add **categories**_
     
     ![AddRecipe](assets/img-readme/add-recipe.png)
 
+- Edit Recipe:
+
+    - Allows the user to:
+
+        - Change each field of the form, delete ingredients or steps, or add new.
+        - Submit the form and update the recipe.
+        - Cancel and go back.
+
+    ![EditRecipe](assets/img-readme/edit-recipe1.png)
+
+    ![EditRecipe](assets/img-readme/edit-recipe2.png)
+
+    ![EditRecipe](assets/img-readme/edit-recipe3.png)
+
 
 
 
