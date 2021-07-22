@@ -61,9 +61,33 @@ _Please note that currently Admin user can only add **categories**_
     - Be able to Register and Login
 
 ### Design
-- #### Typography
-    - The primary font used is **Poppins**, and **Sans Serif** is used as a fallback font.
--   #### Images
+
+#### Colors
+
+- Colors used for text:
+    - #515251
+    - #6A7359
+    - #fff
+- Background colors:
+    - rgba(241, 183, 183, 0.29)
+    - rgba(255, 255, 255, 0.28);
+    - rgba(255, 255, 255, 0.8)
+    - rgba(243, 222, 222, 0.3)
+    - rgba(255, 255, 255, 0.4)
+    - #f7e3e3
+    - #f48b89
+    - #6A7359
+    - #515251
+    - #eab0b1
+    - #f5e9e9
+    - #e06666
+    - #ec7f7d
+
+#### Typography
+
+- The primary font used is **Poppins**, and **Sans Serif** is used as a fallback font.
+
+#### Images
 ## Data Schema
 [MongoDB](https://www.mongodb.com/) was used for this project and schema design was created. See below:
 
