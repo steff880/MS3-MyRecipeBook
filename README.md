@@ -213,6 +213,24 @@ _Please note that currently Admin user can only add **categories**_
 
     ![Profile](assets/img-readme/profile.png)
 
+- Full Recipe
+
+    - Full Recipe page allows the user to:
+
+        - View full recipe with method and ingredients.
+        - Edit button can be used to Edit current recipe.
+        - Delete button can be used to delete current recipe.
+        - Back button to take the user to previous page.
+        - Use the link to view the original recipe.
+
+*Please note that if user is viewing someone elses recipe they will not be able to edit or delete, but insted will see only the **back** button.*
+
+![FullRecipe](assets/img-readme/full-recipe1.png)
+
+![FullRecipe](assets/img-readme/full-recipe2.png)
+
+
+
 
 ## Technologies Used
 ### Languages
