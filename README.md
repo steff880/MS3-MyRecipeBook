@@ -191,6 +191,17 @@ _Please note that currently Admin user can only add **categories**_
 
     ![Register](assets/img-readme/register.png)
 
+- Login 
+
+    - Login page allows the user to:
+
+        - Enter the username used when registered.
+
+        - Use the password created when registered and [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/) will un-hash the password for user authentication.
+
+        - Login button, submits the form when all fields are filled.
+
+    ![Login](assets/img-readme/login.png)
 
 
 ## Technologies Used
