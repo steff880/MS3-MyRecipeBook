@@ -281,6 +281,14 @@ def get_categories():
             return redirect(url_for("profile", username=session["user"]))
 
 
+# ------------ Add Category
+
+
+@app.route("/add_category", methods=["GET", "POST"])
+def add_category():
+    return render_template("add_category.html")
+
+
 # ---------- Run app
 
 
