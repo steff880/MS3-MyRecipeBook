@@ -316,7 +316,7 @@ def add_category():
         return redirect(url_for("profile", username=session["user"]))
 
 
-# --------- Newsletter Subscribtion
+# --------- Newsletter Subscription
 # Inspired from:
 # https://github.com/juanstelling/MS3_breaktasty/blob/fe5b544beb648f153f69f362bf06b31bcc3e7b09/app.py
 
@@ -328,7 +328,7 @@ def subscribe():
             {"email": request.form.get("email").lower()})
 
         if existing_email:
-            flash("You already have a subcribtion!")
+            flash("You already have a subcription!")
             return redirect('home')
         subscriber = {
             "email": request.form.get("email").lower()
