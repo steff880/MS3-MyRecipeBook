@@ -317,7 +317,7 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
 - By using EmailJS, to send an email to the user after they subscribe for the newsletter.
 
-
+---
 
 ## Technologies Used
 ### Languages
@@ -325,13 +325,14 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+---
 ### Frameworks, Libraries & Programs Used
 - [Materialize](https://materializecss.com/)
     - Materialize was used to help with the responsiveness and styling of the website. 
 - [Balsamiq](https://balsamiq.com/)
     - Balsamiq was used for creating the wireframes for this project.
 - [jQuery](https://jquery.com/)
-    - jQuery was mainly used to initialize some Materialize components.
+    - jQuery was used to initialize [Materialize](https://materializecss.com/) and also for the site's functionality, as is Vanilla JS as well
 - [Google Fonts](https://fonts.google.com/)
     - Google Fonts was used to import the **Poppins** font, which was used throughout the project.
 - [Font Awesome](https://fontawesome.com/)
@@ -340,9 +341,33 @@ If user is **admin**, he/she will have access to _Manage Categories_.
     - GitHub is used to store the project's code after being pushed from Git.
 - [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- [Gitpod](https://www.gitpod.io/docs/)
+
+    - Used as the IDE for this project.
+
+- [Am I Responsice](http://ami.responsivedesign.is/#)
+
+    - Used to validate the responsiveness of the site.
+
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+     - Flask was used as the web framework for the application.
+- [PyMongo](https://pypi.org/project/pymongo/)
+     - `flask_pymongo` was used to connect between the MongoDB database and Python.
+- [BSON](https://bsonspec.org/)
+     - `bson.objectid` is a required dependency for MongoDB.
+- [Jinja](http://jinja.pocoo.org/docs/2.10/)
+     - Jinja templating language was used to simplify and display backend data in html.
+- [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/)
+     - Werkzeug was used for password hashing and authentication.
+
+
+
+
 ## Resources
 ## Testing
 ## Deployment
+
+
 ## Credits
 ### Code
 ### Images
