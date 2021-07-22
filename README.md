@@ -349,15 +349,28 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
     - Used to validate the responsiveness of the site.
 
+- [Heroku](https://id.heroku.com/login)
+
+     -  Heroku was used in order to deploy the website.
+
 - [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+
      - Flask was used as the web framework for the application.
+
 - [PyMongo](https://pypi.org/project/pymongo/)
+
      - `flask_pymongo` was used to connect between the MongoDB database and Python.
+
 - [BSON](https://bsonspec.org/)
+
      - `bson.objectid` is a required dependency for MongoDB.
+
 - [Jinja](http://jinja.pocoo.org/docs/2.10/)
+
      - Jinja templating language was used to simplify and display backend data in html.
+
 - [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/)
+
      - Werkzeug was used for password hashing and authentication.
 
 
@@ -367,6 +380,38 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 ## Testing
 ## Deployment
 
+- Login in to [Heroku](https://id.heroku.com/login)
+- Click on New, and Create new app
+- Enter your app name
+- Select the region that is closest to you
+- Click on the Connect to GitHub section in the deploy tab in Heroku.
+- Search your repository to connect with it.
+- Then connect to your repository
+- Go to settings and click on Config Vars
+- Enter the variables in your env.py file.
+    
+        os.environ.setdefault("IP", "0.0.0.0")
+        os.environ.setdefault("PORT", "5000")
+        os.environ.setdefault("SECRET_KEY", "Generate the key for randomkeygen.com")
+        os.environ.setdefault("MONGO_URI", "") --> used to connect to our database
+        os.environ.setdefault("MONGO_DBNAME", "name of our database")
+
+- Enable Automatic Deployment
+
+    - Go to the deploy tab
+    - In automatic deploys section, choose the branch that you want to deploy from and select Enable Automatic Deploys.
+
+
+### Clone It
+
+1. Login to [GitHub](https://github.com/)
+2. Fork the Repository.
+3. Then click **Code** under the _Settings_ button.
+4. Choose HTTPS, SSH, or GitHub CLI, then click the copy button to the right.
+5. Open Git Bash
+6. Change the directory to the location where you want the cloned directory to be made.
+7. Type _git clone_ and paste the URL you copied before.
+8. To create the clone press _Enter_
 
 ## Credits
 ### Code
