@@ -123,6 +123,7 @@ def login():
                     session["user"] = request.form.get("username").lower()
                     user = mongo.db.users.find_one(
                         {"username": session["user"]})
+                    # check if user is admin
                     if user["is_admin"]:
                         session["is_admin"] = True
                     else:
@@ -282,11 +283,37 @@ def get_categories():
 
 
 # ------------ Add Category
-
+# Inspired by:
+# https://github.com/DonnaIB/surround_yourself_with_spanish/blob/master/app.py
 
 @app.route("/add_category", methods=["GET", "POST"])
+@login_required
 def add_category():
-    return render_template("add_category.html")
+    # check if user is in session
+    if "user" in session:
+        user = mongo.db.users.find_one(
+            {"username": session["user"]})
+        # check if user is admin
+        if user["is_admin"]:
+            existing_category = mongo.db.categories.find_one(
+                {"category_name": request.form.get(
+                    "category_name")})
+            # check if category exists
+            if existing_category:
+                flash("Category already exists")
+            elif request.method == "POST":
+                category = {
+                    "category_name": request.form.get("category_name")
+                }
+
+                mongo.db.categories.insert_one(category)
+                flash("New category has been added!")
+                return redirect(url_for("get_categories"))
+
+        return render_template("add_category.html")
+    else:
+        flash("You do not have permission to view this page")
+        return redirect(url_for("profile", username=session["user"]))
 
 
 # ---------- Run app
