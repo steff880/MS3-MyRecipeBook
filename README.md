@@ -87,7 +87,6 @@ _Please note that currently Admin user can only add **categories**_
 
 - The primary font used is **Poppins**, and **Sans Serif** is used as a fallback font.
 
-#### Images
 ## Data Schema
 [MongoDB](https://www.mongodb.com/) was used for this project and schema design was created. See below:
 
@@ -373,10 +372,6 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
      - Werkzeug was used for password hashing and authentication.
 
-
-
-
-## Resources
 ## Testing
 ## Deployment
 
@@ -414,6 +409,22 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 8. To create the clone press _Enter_
 
 ## Credits
+### Resources
+- [Rebecca Tracey-Timoney](https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/README.md#Credits)
+
+- [juanstelling](https://github.com/juanstelling/MS3_breaktasty/blob/fe5b544beb648f153f69f362bf06b31bcc3e7b09/README.md#deployment)
+
+- [TravelTimN](https://github.com/TravelTimN/flask-task-manager-project/tree/demo)
+
+- [Stack Overflow](https://stackoverflow.com/) 
+    - For genereal resource
+
+- [mickmccann](https://github.com/mickmccann/MS3-Small-Jobs#contents)
+
+- [Code Institute's Flask Task-Manager Mini Project](https://www.youtube.com/watch?v=y72Dq3GRxhc)
+
+- [Materialize](https://materializecss.com/)
+
 ### Code
 ### Images
 ### Acknowledgements
