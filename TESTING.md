@@ -434,3 +434,38 @@ no syntax errors in the project.
 - No errors found.
 
 ![PEP8](assets/img-readme/python-validate.png)
+
+
+### Additional Testing
+
+-   Laptop & Desktop
+
+    -   Chrome
+
+        -   All tested and working fine
+
+    -   Edge
+
+        -   All tested and working fine
+
+    -   Opera
+
+        -   All tested and working fine
+
+    -   Firefox
+
+        -  When tested on Firefox found the following error:
+            
+            - Everywhere I used the property `backdrop-filter: blur();`, it does not work, and also on Full Recipe page,
+            the image panel and info panel are half the size they should be.
+
+![Firefox](assets/img-readme/firefox-issue.png)
+
+
+ -   Tested on Chrome using different devices via google chrome device emulators and all works fine.
+    -   Also tested on the following physical mobile devices:
+
+        1.  Samsung Galaxy S9 plus and works fine
+
+        2.  Samsung Galaxy s10 and works fine
+
