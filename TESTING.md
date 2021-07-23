@@ -143,3 +143,14 @@ Add onclick event on the element in HTML and remove Event Listener form script.j
 <br>
 
 ![Delete Recipe](assets/img-readme/delete-recipe.png)
+
+
+- As an **admin**
+
+  - If the session user is admin, he/she will have access to Manage Categories page. There the user can see all current recipes and also click on the **Add Category** button. After just enter a name for category and submit the form by clickig on the **Add Category** button
+
+<br>
+
+![Manage Categories](assets/img-readme/manage-categories.png)
+
+![Add Categories](assets/img-readme/add-category.png)
