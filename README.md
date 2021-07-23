@@ -543,4 +543,5 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 -   Benjamin Kavanagh, for the help and advices he provided me with. I can't thank him enough.
 -   Code Institute Tutor team
 -   [Rebecca Tracey-Timoney](https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/README.md#Credits)
--   [juanstelling](https://github.com/juanstelling/MS3_breaktasty/blob/fe5b544beb648f153f69f362bf06b31bcc3e7b09/README.
+-   [juanstelling](https://github.com/juanstelling/MS3_breaktasty/blob/fe5b544beb648f153f69f362bf06b31bcc3e7b09/README)
+-   [w3schools](https://www.w3schools.com/default.asp) for all the useful information found on the site.
