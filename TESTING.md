@@ -86,3 +86,29 @@ Event listener bug:
 - Fix:
 
 Add onclick event on the element in HTML and remove Event Listener form script.js file
+
+## Testing User Stories
+
+- First time visitor
+
+  - The user can easily navigate to Login or Register page and create/log into their account. Just have to click
+  on the navigation menu at the top of the website, or if they are on Home page click register/login buttons.
+
+<br>
+  
+  ![Home](assets/img-readme/text-info-and-buttons.png)
+
+  - If the user navigates to Recipes page, there he/she can find all recipes currently on the database. Also can use the search bar, to query for a specific recipe.
+
+<br>
+
+  ![RecipeCards](assets/img-readme/recipe-cards.png)
+
+  ![Search](assets/img-readme/search-bar.png)
+
+  - If the user has created an account, he/she can view full recipe page
+
+<br>
+
+![FullRecipe](assets/img-readme/full-recipe1.png)
+![FullRecipe](assets/img-readme/full-recipe2.png)
