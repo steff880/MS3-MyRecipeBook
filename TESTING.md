@@ -5,16 +5,16 @@
 ## Testing
 ### Bugs and fixes
 - Bug:
-Had an issue with **Materialize sidenav overlay**. When you open the sidenav, content is barely visible.
+Had an issue with **Materialize sidenav overlay**. When you open the sidenav, the content is barely visible.
 ![Sidenav Overlay](assets/img-readme/sidenav-overlay.png)
 
 - Fix:
-Did a research on how to deal with this issue and found solution on [Stack Overflow](https://stackoverflow.com/questions/38642911/how-to-disable-sidenav-overlay-in-materializecss).
+Did research on how to deal with this issue and found a solution on [Stack Overflow](https://stackoverflow.com/questions/38642911/how-to-disable-sidenav-overlay-in-materializecss).
 Then set the height and width of the overlay to **0**.
 
 - Bug:
-Issue with Event Listener when trying to check if passwords match. 
-As I added same Event Listener to multiple elements and had a conflict on other pages.
+An issue with Event Listener when trying to check if passwords match. 
+As I added the same Event Listener to multiple elements and had a conflict on other pages.
 
 ![JS Error](assets/img-readme/js-error.png)
     
@@ -29,7 +29,7 @@ Issue with Add Recipe page and more specifically:
 
         doocument.addEventListener('click', deleteIngredient)
 
-I was trying to add an Event Listener to an element that has not been created yet. Did a research and found this on [Stack Overflow](https://stackoverflow.com/questions/30601620/adding-an-event-listener-to-an-element-that-doesnt-exist-yet-in-vanilla-javascr). Then decided to use the above code and all was fine til next day when I could not do anything on the site. Once you get to Add Recipe page the site freezes and can not navigate to different page.
+I was trying to add an Event Listener to an element that has not been created yet. Did research and found this on [Stack Overflow](https://stackoverflow.com/questions/30601620/adding-an-event-listener-to-an-element-that-doesnt-exist-yet-in-vanilla-javascr). Then decided to use the above code and all was fine till the next day when I could not do anything on the site. Once you get to Add Recipe page the site freezes and can not navigate to a different page.
 
 - Fix:
 
@@ -37,7 +37,7 @@ Spoke to a Tutor and realized what the issue was. Then as advised did this:
 
         ingredientRow.addEventListener('click', deleteIngredient)
 
-So insted of adding Event Listener to the document, just add it to the parent element.
+So instead of adding Event Listener to the document, just add it to the parent element.
 
 **_Plese not that further into the development of the project decided to use jQuery and reduce code used for the same purpose. It also improved the functionality._**
 
@@ -49,7 +49,7 @@ So insted of adding Event Listener to the document, just add it to the parent el
 
 - Bug:
 
-Issue with cards on Profile page
+An issue with cards on the Profile page
 ![Layout Issue](assets/img-readme/layout-issue.png)
 
 - Fix:
@@ -59,7 +59,7 @@ Decided to use Materialize card and add some custom styling
 
 - Bug:
 
-Issue with text overflowing 
+An issue with text overflowing 
 
 ![Oveflow bug](assets/img-readme/overflow-bug.png)
 
@@ -69,7 +69,7 @@ Add ` overflow: auto; ` to element with class **panel-ingredients**
 
 - Bug:
 
-The element with class **card-panel-full-recipe** desn't have a correct height when user viewing the recipe is not who created it. If a user views his own recipe then there are edit and delete buttons on top of back button. This is creating a difference in height.
+The element with class **card-panel-full-recipe** doesn't have a correct height when the user viewing the recipe is not who created it. If a user views his recipe then there are edit and delete buttons on top of the back button. This is creating a height difference.
 
 ![Card Panel](assets/img-readme/card-panel-bug.png)
 
@@ -89,16 +89,16 @@ Add onclick event on the element in HTML and remove Event Listener form script.j
 
 ## Testing User Stories
 
-- First time visitor
+- First-time visitor
 
-  - The user can easily navigate to Login or Register page and create/log into their account. Just have to click
-  on the navigation menu at the top of the website, or if they are on Home page click register/login buttons.
+  - The user can easily navigate to the Login or Register page and create/log into their account. Just have to click
+  on the navigation menu at the top of the website, or if they are on the Home page click the register/login buttons.
 
 <br>
   
   ![Home](assets/img-readme/text-info-and-buttons.png)
 
-  - If the user navigates to Recipes page, there he/she can find all recipes currently on the database. Also can use the search bar, to query for a specific recipe.
+  - If the user navigates to the Recipes page, where he/she can find all recipes currently on the database. Also can use the search bar, to query for a specific recipe.
 
 <br>
 
@@ -106,7 +106,7 @@ Add onclick event on the element in HTML and remove Event Listener form script.j
 
   ![Search](assets/img-readme/search-bar.png)
 
-  - If the user has created an account, he/she can view full recipe page
+  - If the user has created an account, he/she can view the full recipe page
 
 <br>
 
@@ -115,13 +115,13 @@ Add onclick event on the element in HTML and remove Event Listener form script.j
 
 - Returning visitor
 
-  - The user can easily navigate to Login page and log back into the site, and use all it's features.
+  - The user can easily navigate to the Login page and log back into the site, and use all its features.
 
 <br>
 
 ![Login](assets/img-readme/login.png)
 
-  - After loging back to their accout, the user will be reidrected to their _Profile_ page, and from there simply click on the **Add Recipe** button to start adding a new recipe. After just fill all needed fields on the Add Recipe Form.
+  - After logging back to their account, the user will be redirected to their _Profile_ page, and from there simply click on the **Add Recipe** button to start adding a new recipe. After just fill all needed fields on the Add Recipe Form.
 
 <br>
 
@@ -130,7 +130,7 @@ Add onclick event on the element in HTML and remove Event Listener form script.j
 
   - The user can view all recipes he/she has created on their Profile Page
 
-  - The user can also edit a recipe they have created, by viewing the full recipe and clicking on the edit button. From there just have to amend the fields that are needed, and when finished just click **Edit Recipe** button.
+  - The user can also edit a recipe they have created, by viewing the full recipe and clicking on the edit button. From there just have to amend the fields that are needed, and when finished just click the **Edit Recipe** button.
 
 <br>
 
@@ -147,7 +147,7 @@ Add onclick event on the element in HTML and remove Event Listener form script.j
 
 - As an **admin**
 
-  - If the session user is admin, he/she will have access to Manage Categories page. There the user can see all current recipes and also click on the **Add Category** button. After just enter a name for category and submit the form by clickig on the **Add Category** button
+  - If the session user is an admin, he/she will have access to the Manage Categories page. There the user can see all current recipes and also click on the **Add Category** button. After just enter a name for a category and submit the form by clicking on the **Add Category** button
 
 <br>
 
@@ -410,28 +410,28 @@ no syntax errors in the project.
 
 [W3C Markup Validator](https://validator.w3.org/)
 
--   No errors found. Only two warnings for section missing a heading.
+-   No errors were found. Only two warnings for section missing a heading.
 
 ![HTML](assets/img-readme/html-validate.png)
 
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-- Found errors for using `backdrop-filter: blur();` property. Could not find a way arround it, even after adding vendor prefixes.
+- Found errors for using `backdrop-filter: blur();` property. Could not find a way around it, even after adding vendor prefixes.
 
 - One Materialize Error
 
-- All other warning are from Materialize, vendor prefixes, or Font Awesoome.
+- All other warnings are from Materialize, vendor prefixes, or Font Awesome.
 
 ![Css](assets/img-readme/css-validate.png)
 
 ### [JSHint](https://jshint.com/)
 
-- No errors found. Only warnings for using **_let, const, arrow functions_**.
+- No errors were found. Only warnings for using **_let, const, arrow functions_**.
 
 
 ### [PEP8](http://pep8online.com/)
 
-- No errors found.
+- No errors were found.
 
 ![PEP8](assets/img-readme/python-validate.png)
 
@@ -456,7 +456,7 @@ no syntax errors in the project.
 
         -  When tested on Firefox found the following error:
             
-            - Everywhere I used the property `backdrop-filter: blur();`, it does not work, and also on Full Recipe page,
+            - Everywhere I used the property `backdrop-filter: blur();`, it does not work, and also on the Full Recipe page,
             the image panel and info panel are half the size they should be.
 
 ![Firefox](assets/img-readme/firefox-issue.png)

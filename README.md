@@ -20,27 +20,27 @@
 
 ## UX 
 ### Project Goals
-The primary goal of **MyRecipeBook**, is to allow the users to _create_, _save_, _search_ and _view_ their favourite recipes in one place.
+The primary goal of **MyRecipeBook** is to allow the users to _create_, _save_, _search_, and _view_ their favorite recipes in one place.
 
 Use _HTML5_, _CSS3_, _JavaScript_, _Python_, _Flask_, and _MongoDB_
 #### User Goals
-The user is looking for web-based app where they can:
-- Use CRUD convensions to:
+The user is looking for a web-based app where they can:
+- Use CRUD conventions to:
     - Create a recipe
     - Read recipe
     - Update(Edit) recipe
     - Delete recipe they created
 - Be able to search the database for recipes
 ### User Stories
-**_As a first time visitor, I want to be:_**
+**_As a first-time visitor, I want to be:_**
 - Able to easily find recipes stored in the database.
 - Able to view full recipe and get valuable information.
-- Able to Create and Account.
+- Able to Create an Account.
 
 **_As a returning visitor, I want to be:_**
 - Able to log into my account and have access to all features of the site.
 - Able to Add(Create) recipes and store them in the database.
-- Able to View my own recipes
+- Able to view my recipes
 - Able to Edit recipe
 - Able to Delete a recipe(s) I have created.
 
@@ -60,8 +60,8 @@ _Please note that currently Admin user can only add **categories**_
     - Register or Log in to account
     - View Recipes
     - Search Recipes, by category or name, even by ingredients
-    - Create their own recipes and upload them to the database
-    - View the full recipe they have created, or someone elses
+    - Create their recipes and upload them to the database
+    - View the full recipe they have created, or someone else
     - Edit recipes they  have created
     - Delete a recipe created by them
 
@@ -71,9 +71,9 @@ _Please note that currently Admin user can only add **categories**_
     - Easy navigation
     - Welcoming Design
     - Search the database for recipes
-    - Add their own recipe
+    - Add their recipe
     - Manage recipes (Edit, Delete)
-    - Save and View full recipe
+    - Save and View the full recipe
     - Be able to Register and Login
 
 [^ back to top ^](#table-of-contents)
@@ -134,15 +134,15 @@ _Please note that currently Admin user can only add **categories**_
     - Created By (it will get a value of the current user in session)
 
 ### Categories Collection
-- Currently there are four categories the user can choose from:
+- Currently, there are four categories the user can choose from:
     - Main
     - Starter
     - Salad
     - Soup
 
 ### Subscribers Collection
-- If the user decides to subscribe for the newsletter he/she will have to provide:
-    - Email Addres (which is stored in the collection)
+- If the user decides to subscribe to the newsletter he/she will have to provide:
+    - Email Address (which is stored in the collection)
 
 [^ back to top ^](#table-of-contents)
 
@@ -155,18 +155,18 @@ _Please note that currently Admin user can only add **categories**_
 
 ## Features
 
-- Each page has a responsive and fixed to the top navigation, in order for the user to be able at any moment to navigate to a different page.
+- Each page has responsive and fixed-to-the-top navigation, for the user to be able at any moment to navigate to a different page.
 - A class *active* is given to the current page link in the navigation, highlighting it for the user.
 
 ![Navigation](assets/img-readme/show-navigation.png)
 
 ![SideNavigation](assets/img-readme/side-navigation.png)
 
-- The **_Footer_** of the site contains social media links and and Newsletter subscription
+- The **_Footer_** of the site contains social media links and a Newsletter subscription
 
 ![Footer](assets/img-readme/footer.png)
 
-- If the user is logged in their account, will have access to:
+- If the user is logged in to their account, will have access to:
     - Profile page
     - Add Recipe page
     - Update Recipe
@@ -178,7 +178,7 @@ _Please note that currently Admin user can only add **categories**_
     - Recipe Category
     - Recipe Name
     - Created by
-    - A button to view full recipe
+    - A button to view the full recipe
 
 ![RecipeCards](assets/img-readme/recipe-cards.png)
 
@@ -192,11 +192,11 @@ _Please note that currently Admin user can only add **categories**_
 
     ![Hero](assets/img-readme/hero-image.png)
 
-    - Short text prompting user to create an account and start adding recipes and **cta** buttons
+    - Short text prompting the user to create an account and start adding recipes and **cta** buttons
 
     ![ShortTextAndButtons](assets/img-readme/text-info-and-buttons.png)
 
-- Rcipes
+- Recipes
 
     - A search bar where the user can search for recipes
 
@@ -208,13 +208,13 @@ _Please note that currently Admin user can only add **categories**_
 
 [^ back to top ^](#table-of-contents)
 
-- Rgister
+- Register
 
     - Registration Form allows the user to:
         
         - Enter their desired username
 
-        - The password field uses [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/) to hash the password on entry and confirm password is validated using Javascript. If the passwords do not match, a disabled class is added to the Register button, preventing the user from submitting the form with incorrect password.
+        - The password field uses [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/) to hash the password on entry and confirm the password is validated using Javascript. If the passwords do not match, a disabled class is added to the Register button, preventing the user from submitting the form with an incorrect password.
 
         - Email Address field where the user has to enter their **email**
 
@@ -255,12 +255,12 @@ _Please note that currently Admin user can only add **categories**_
     - Full Recipe page allows the user to:
 
         - View full recipe with method and ingredients.
-        - Edit button can be used to Edit current recipe.
-        - Delete button can be used to delete current recipe.
-        - Back button to take the user to previous page.
+        - Edit button can be used to Edit the current recipe.
+        - Delete button can be used to delete the current recipe.
+        - Back button takes the user to the previous page.
         - Use the link to view the original recipe.
 
-*Please note that if user is viewing someone elses recipe they will not be able to edit or delete, but insted will see only the **back** button.*
+*Please note that if the user is viewing someone else's recipe they will not be able to edit or delete, but instead will see only the **back** button.*
 
 ![FullRecipe](assets/img-readme/full-recipe1.png)
 
@@ -285,8 +285,8 @@ _Please note that currently Admin user can only add **categories**_
         
         - Use the buttons to:
 
-            - Add new ingredient field, in order to insert every ingredient of the recipe.
-            - Add new step from the method.
+            - Add a new ingredient field, to insert every ingredient of the recipe.
+            - Add a new step from the method.
             - Cancel and go back.
             - Submit the form by clicking the **add recipe button**.
     
@@ -319,14 +319,14 @@ _Please note that currently Admin user can only add **categories**_
     ![DeleteRecipe](assets/img-readme/delete-recipe.png)
 
 
-If user is **admin**, he/she will have access to _Manage Categories_.
+If the user is **admin**, he/she will have access to _Manage Categories_.
 
 - Manage Categories:
 
     - Allows the user to:
 
         - View all categories
-        - Add new category
+        - Add a new category
 
     ![ManageCategories](assets/img-readme/manage-categories.png)
 
@@ -334,7 +334,7 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
     - Allows the user to:
 
-        - Add new category by filling up the form.
+        - Add a new category by filling up the form.
         - Submit the form by using the **Add Category** button.
         - Cancel and go back.
     
@@ -346,17 +346,17 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
 - Manage Profile
 
-    - Add profile image
+    - Add a profile image
     - Edit username or password
     - Delete account
 
 - More admin features:
 
     - Be able to delete any recipe
-    - Be able to delete category
+    - Be able to delete a category
     - Be able to edit category
 
-- By using EmailJS, to send an email to the user after they subscribe for the newsletter.
+- By using EmailJS, to send an email to the user after they subscribe to the newsletter.
 
 ---
 
@@ -397,7 +397,7 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
 - [Heroku](https://id.heroku.com/login)
 
-     -  Heroku was used in order to deploy the website.
+     -  Heroku was used to deploy the website.
 
 - [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 
@@ -413,7 +413,7 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
 - [Jinja](http://jinja.pocoo.org/docs/2.10/)
 
-     - Jinja templating language was used to simplify and display backend data in html.
+     - Jinja templating language was used to simplify and display backend data in HTML.
 
 - [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/)
 
@@ -432,7 +432,7 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 ## Deployment
 
 - Login in to [Heroku](https://id.heroku.com/login)
-- Click on New, and Create new app
+- Click on New, and Create a new app
 - Enter your app name
 - Select the region that is closest to you
 - Click on the Connect to GitHub section in the deploy tab in Heroku.
@@ -450,7 +450,7 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 - Enable Automatic Deployment
 
     - Go to the deploy tab
-    - In automatic deploys section, choose the branch that you want to deploy from and select Enable Automatic Deploys.
+    - In the automatic deploys section, choose the branch that you want to deploy from and select Enable Automatic Deploys.
 
 [^ back to top ^](#table-of-contents)
 
@@ -540,7 +540,7 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 -   My mentor, Oluwaseun Owonikoko, for her guidance and feedback.
 -   The team at Code Institute, for teaching me the necessary skills to create this site.
 -   [Stackoverflow](https://stackoverflow.com/) - for general needs
--   Benjamin Kavanagh, for the help and advices he provided me with. I can't thank him enough.
+-   Benjamin Kavanagh, for the help and advice he provided me with. I can't thank him enough.
 -   Code Institute Tutor team
 -   [Rebecca Tracey-Timoney](https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/README.md#Credits)
 -   [juanstelling](https://github.com/juanstelling/MS3_breaktasty/blob/fe5b544beb648f153f69f362bf06b31bcc3e7b09/README)
