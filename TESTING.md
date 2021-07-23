@@ -401,3 +401,36 @@ If user in session:
 
 
 **_Please note that when testing the forms realized that there is no information for the user to know what the required format of the username or password fields is. Will be implemented in the future. Thank you_** 😀.
+
+
+### W3C Validator Testing
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were
+no syntax errors in the project.
+
+[W3C Markup Validator](https://validator.w3.org/)
+
+-   No errors found. Only two warnings for section missing a heading.
+
+![HTML](assets/img-readme/html-validate.png)
+
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+- Found errors for using `backdrop-filter: blur();` property. Could not find a way arround it, even after adding vendor prefixes.
+
+- One Materialize Error
+
+- All other warning are from Materialize, vendor prefixes, or Font Awesoome.
+
+![Css](assets/img-readme/css-validate.png)
+
+### [JSHint](https://jshint.com/)
+
+- No errors found. Only warnings for using **_let, const, arrow functions_**.
+
+
+### [PEP8](http://pep8online.com/)
+
+- No errors found.
+
+![PEP8](assets/img-readme/python-validate.png)
