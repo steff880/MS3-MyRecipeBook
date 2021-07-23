@@ -189,8 +189,6 @@ If user is not in session:
     </tr>
 </table>
 
-![Logout](assets/img-readme/logout.png)
-
 If user in session:
 
 <table>
@@ -228,6 +226,8 @@ If user in session:
         <td>Pass</td>
     </tr>
 </table>
+
+![Logout](assets/img-readme/logout.png)
 
 ![Admin](assets/img-readme/admin.png)
 
