@@ -423,7 +423,7 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
 ## Testing
 
-    - [All Testing](https://github.com/steff880/MS3-MyRecipeBook/blob/main/TESTING.md)
+[All Testing](https://github.com/steff880/MS3-MyRecipeBook/blob/main/TESTING.md)
 
 [^ back to top ^](#table-of-contents)
 
