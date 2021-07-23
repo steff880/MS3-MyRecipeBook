@@ -421,6 +421,8 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
 - [Autoprefixer](https://autoprefixer.github.io/)
 
+- [Favicon Generator](https://realfavicongenerator.net/)
+
 ## Testing
 
 [All Testing](https://github.com/steff880/MS3-MyRecipeBook/blob/main/TESTING.md)
