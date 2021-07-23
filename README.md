@@ -2,6 +2,22 @@
 
 ![Responsive](assets/img-readme/responsive.png)
 
+## Table of Contents
+
+> - [UX](#ux)
+> - [User Stories](#user-stories)
+> - [Design](#design)
+> - [Data Schema](#data-schema)
+> - [Wireframes](#wireframes)
+> - [Features](#features)
+> - [Existing Features](#existing-features)
+> - [Technologies Used](#technologies-used)
+> - [Testing](#testing)
+> - [Deployment](#deployment)
+> - [Credits](#credits)
+> - [Resources](#resources)
+> - [Acknowledgements](#acknowledgements)
+
 ## UX 
 ### Project Goals
 The primary goal of **MyRecipeBook**, is to allow the users to _create_, _save_, _search_ and _view_ their favourite recipes in one place.
@@ -60,6 +76,8 @@ _Please note that currently Admin user can only add **categories**_
     - Save and View full recipe
     - Be able to Register and Login
 
+[^ back to top ^](#table-of-contents)
+
 ### Design
 
 #### Colors
@@ -83,6 +101,8 @@ _Please note that currently Admin user can only add **categories**_
     - #e06666
     - #ec7f7d
 
+[^ back to top ^](#table-of-contents)
+
 #### Typography
 
 - The primary font used is **Poppins**, and **Sans Serif** is used as a fallback font.
@@ -91,6 +111,8 @@ _Please note that currently Admin user can only add **categories**_
 [MongoDB](https://www.mongodb.com/) was used for this project and schema design was created. See below:
 
 ![Schema Design](assets/img-readme/updated-schema-design.png)
+
+[^ back to top ^](#table-of-contents)
 
 ### Users Collection
 - Upon regisering, the user will provide:
@@ -121,10 +143,16 @@ _Please note that currently Admin user can only add **categories**_
 ### Subscribers Collection
 - If the user decides to subscribe for the newsletter he/she will have to provide:
     - Email Addres (which is stored in the collection)
+
+[^ back to top ^](#table-of-contents)
+
 ### Wireframes
 [Wireframes part 1](https://github.com/steff880/MS3-MyRecipeBook/blob/main/assets/wireframes/wireframes-part1.png)
 
 [Wireframes part 2](https://github.com/steff880/MS3-MyRecipeBook/blob/main/assets/wireframes/wireframes-part2.png)
+
+[^ back to top ^](#table-of-contents)
+
 ## Features
 
 - Each page has a responsive and fixed to the top navigation, in order for the user to be able at any moment to navigate to a different page.
@@ -154,6 +182,8 @@ _Please note that currently Admin user can only add **categories**_
 
 ![RecipeCards](assets/img-readme/recipe-cards.png)
 
+[^ back to top ^](#table-of-contents)
+
 ### Existing Features
 
 - Home Page
@@ -176,6 +206,8 @@ _Please note that currently Admin user can only add **categories**_
 
     ![RecipeCards](assets/img-readme/recipe-cards.png)
 
+[^ back to top ^](#table-of-contents)
+
 - Rgister
 
     - Registration Form allows the user to:
@@ -190,6 +222,8 @@ _Please note that currently Admin user can only add **categories**_
 
     ![Register](assets/img-readme/register.png)
 
+[^ back to top ^](#table-of-contents)
+
 - Login 
 
     - Login page allows the user to:
@@ -202,6 +236,8 @@ _Please note that currently Admin user can only add **categories**_
 
     ![Login](assets/img-readme/login.png)
 
+[^ back to top ^](#table-of-contents)
+
 - Profile
 
     - Profile page allows the user to:
@@ -211,6 +247,8 @@ _Please note that currently Admin user can only add **categories**_
         - Use the full recipe button to view the full recipe.
 
     ![Profile](assets/img-readme/profile.png)
+
+[^ back to top ^](#table-of-contents)
 
 - Full Recipe
 
@@ -228,6 +266,7 @@ _Please note that currently Admin user can only add **categories**_
 
 ![FullRecipe](assets/img-readme/full-recipe2.png)
 
+[^ back to top ^](#table-of-contents)
 
 - Add Recipe
 
@@ -252,6 +291,8 @@ _Please note that currently Admin user can only add **categories**_
             - Submit the form by clicking the **add recipe button**.
     
     ![AddRecipe](assets/img-readme/add-recipe.png)
+
+[^ back to top ^](#table-of-contents)
 
 - Edit Recipe:
 
@@ -299,6 +340,7 @@ If user is **admin**, he/she will have access to _Manage Categories_.
     
     ![AddCategory](assets/img-readme/add-category.png)
 
+[^ back to top ^](#table-of-contents)
 
 ### Features to implement in the future
 
@@ -318,6 +360,8 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
 ---
 
+[^ back to top ^](#table-of-contents)
+
 ## Technologies Used
 ### Languages
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -325,6 +369,9 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 ---
+
+[^ back to top ^](#table-of-contents)
+
 ### Frameworks, Libraries & Programs Used
 - [Materialize](https://materializecss.com/)
     - Materialize was used to help with the responsiveness and styling of the website. 
@@ -378,6 +425,8 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
     - [All Testing](https://github.com/steff880/MS3-MyRecipeBook/blob/main/TESTING.md)
 
+[^ back to top ^](#table-of-contents)
+
 ## Deployment
 
 - Login in to [Heroku](https://id.heroku.com/login)
@@ -401,6 +450,7 @@ If user is **admin**, he/she will have access to _Manage Categories_.
     - Go to the deploy tab
     - In automatic deploys section, choose the branch that you want to deploy from and select Enable Automatic Deploys.
 
+[^ back to top ^](#table-of-contents)
 
 ### Clone It
 
@@ -412,6 +462,8 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 6. Change the directory to the location where you want the cloned directory to be made.
 7. Type _git clone_ and paste the URL you copied before.
 8. To create the clone press _Enter_
+
+[^ back to top ^](#table-of-contents)
 
 ## Credits
 ### Resources
@@ -430,6 +482,8 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
 - [Materialize](https://materializecss.com/)
 
+[^ back to top ^](#table-of-contents)
+
 - Original Recipes
 
     - [Pesto chicken salad](https://www.bbcgoodfood.com/recipes/pesto-chicken-salad)
@@ -447,6 +501,9 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 - [DonnaIB](https://github.com/DonnaIB/surround_yourself_with_spanish/blob/master/app.py)
 - [Code Institute's Flask Task-Manager Mini Project](https://www.youtube.com/watch?v=y72Dq3GRxhc)
 - [Error Handlers](https://flask.palletsprojects.com/en/1.1.x/errorhandling/)
+
+[^ back to top ^](#table-of-contents)
+
 ### Images
 - Home 
     
@@ -473,4 +530,7 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 - Footer and Favicon
 
     - [PurePNG](https://purepng.com/photo/13631/nature-pepermint)
+
+[^ back to top ^](#table-of-contents)
+
 ### Acknowledgements
