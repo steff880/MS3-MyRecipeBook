@@ -1,3 +1,7 @@
+<h1 align="center">MyRecipeBook</h1>
+
+![Responsive](assets/img-readme/responsive.png)
+
 ## Testing
 ### Bugs and fixes
 - Bug:
@@ -34,6 +38,14 @@ Spoke to a Tutor and realized what the issue was. Then as advised did this:
         ingredientRow.addEventListener('click', deleteIngredient)
 
 So insted of adding Event Listener to the document, just add it to the parent element.
+
+**_Plese not that further into the development of the project decided to use jQuery and reduce code used for the same purpose. It also improved the functionality._**
+
+        $(ingredientRow).on('click', '.remove-field', function(e) {
+                e.preventDefault();
+                $(this).parent('div').remove();
+                ingredient--;
+        });
 
 - Bug:
 
