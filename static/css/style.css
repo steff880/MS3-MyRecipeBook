@@ -926,6 +926,10 @@ header .brand-logo,
     .cta-row {
         margin-bottom: 60px;
     }
+
+    .card.medium {
+        height: 440px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
