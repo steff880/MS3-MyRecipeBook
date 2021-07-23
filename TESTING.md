@@ -112,3 +112,34 @@ Add onclick event on the element in HTML and remove Event Listener form script.j
 
 ![FullRecipe](assets/img-readme/full-recipe1.png)
 ![FullRecipe](assets/img-readme/full-recipe2.png)
+
+- Returning visitor
+
+  - The user can easily navigate to Login page and log back into the site, and use all it's features.
+
+<br>
+
+![Login](assets/img-readme/login.png)
+
+  - After loging back to their accout, the user will be reidrected to their _Profile_ page, and from there simply click on the **Add Recipe** button to start adding a new recipe. After just fill all needed fields on the Add Recipe Form.
+
+<br>
+
+![Profile](assets/img-readme/profile.png)
+![Add Recipe](assets/img-readme/add-recipe.png)
+
+  - The user can view all recipes he/she has created on their Profile Page
+
+  - The user can also edit a recipe they have created, by viewing the full recipe and clicking on the edit button. From there just have to amend the fields that are needed, and when finished just click **Edit Recipe** button.
+
+<br>
+
+![Edit](assets/img-readme/edit-recipe1.png)
+
+![Edit](assets/img-readme/edit-recipe3.png)
+
+  - If the user requires to delete a recipe, simply click view full recipe on the recipe he/she had created and from there can use the delete button to delete the recipe
+
+<br>
+
+![Delete Recipe](assets/img-readme/delete-recipe.png)
