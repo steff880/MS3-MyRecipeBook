@@ -427,6 +427,16 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
 - [Materialize](https://materializecss.com/)
 
+- Original Recipes
+
+    - [Pesto chicken salad](https://www.bbcgoodfood.com/recipes/pesto-chicken-salad)
+    - [Beef Lasagne](https://www.bbcgoodfood.com/recipes/classic-lasagne-0)
+    - [Margherita](https://www.bbcgoodfood.com/recipes/next-level-margherita-pizza)
+    - [Pepperoni pizza](https://www.deliciousmagazine.co.uk/recipes/pepperoni-pizza/)
+    - [Tomato soup](https://www.bbcgoodfood.com/recipes/tomato-soup)
+    - [Asian Slaw](https://www.loveandlemons.com/asian-slaw/)
+    - [Jollof spaghetti](https://www.yummymedley.com/jollof-spaghetti/)
+
 ### Code
 - [Rebecca Tracey-Timoney](https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/README.md#Credits)
 - [juanstelling](https://github.com/juanstelling/MS3_breaktasty/blob/fe5b544beb648f153f69f362bf06b31bcc3e7b09/README.md#deployment)
