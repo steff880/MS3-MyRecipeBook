@@ -2,6 +2,8 @@
 
 ![Responsive](assets/img-readme/responsive.png)
 
+[View Live Site Here](https://ms3-myrecipebook.herokuapp.com/)
+
 ## Table of Contents
 
 > - [UX](#ux)
