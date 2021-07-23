@@ -372,6 +372,8 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 
      - Werkzeug was used for password hashing and authentication.
 
+- [Autoprefixer](https://autoprefixer.github.io/)
+
 ## Testing
 ## Deployment
 
@@ -433,4 +435,7 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 - [Code Institute's Flask Task-Manager Mini Project](https://www.youtube.com/watch?v=y72Dq3GRxhc)
 - [Error Handlers](https://flask.palletsprojects.com/en/1.1.x/errorhandling/)
 ### Images
+- Home 
+    
+    - 
 ### Acknowledgements
