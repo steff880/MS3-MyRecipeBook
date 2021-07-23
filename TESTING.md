@@ -398,3 +398,6 @@ If user in session:
 
 
 ![Message](assets/img-readme/message.png)
+
+
+**_Please note that when testing the forms realized that there is no information for the user to know what the required format of the username or password fields is. Will be implemented in the future. Thank you_** 😀.
