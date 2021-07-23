@@ -327,6 +327,7 @@ If user in session:
     </tr>
 </table>
 
+![Delete](assets/img-readme/delete-recipe.png)
 
 #### Testing Forms
 
