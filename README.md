@@ -375,6 +375,9 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 - [Autoprefixer](https://autoprefixer.github.io/)
 
 ## Testing
+
+    - [All Testing](https://github.com/steff880/MS3-MyRecipeBook/blob/main/TESTING.md)
+
 ## Deployment
 
 - Login in to [Heroku](https://id.heroku.com/login)
