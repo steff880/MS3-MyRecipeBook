@@ -426,5 +426,11 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 - [Materialize](https://materializecss.com/)
 
 ### Code
+- [Rebecca Tracey-Timoney](https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/README.md#Credits)
+- [juanstelling](https://github.com/juanstelling/MS3_breaktasty/blob/fe5b544beb648f153f69f362bf06b31bcc3e7b09/README.md#deployment)
+- [TravelTimN](https://github.com/TravelTimN/flask-task-manager-project/tree/demo)
+- [DonnaIB](https://github.com/DonnaIB/surround_yourself_with_spanish/blob/master/app.py)
+- [Code Institute's Flask Task-Manager Mini Project](https://www.youtube.com/watch?v=y72Dq3GRxhc)
+- [Error Handlers](https://flask.palletsprojects.com/en/1.1.x/errorhandling/)
 ### Images
 ### Acknowledgements
