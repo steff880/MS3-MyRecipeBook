@@ -232,3 +232,97 @@ If user in session:
 ![Admin](assets/img-readme/admin.png)
 
 ![Not Admin](assets/img-readme/not-admin.png)
+
+
+#### Testing Buttons
+
+<table>
+    <tr>
+        <th>Test</th>
+        <th>Expected Outcome</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td>Register button</td>
+        <td>When clicked on Register button on Home page,
+            only when user not in session, takes us to Register page.
+        </td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Login button</td>
+        <td>When clicked on Login button on Home page,
+            only when user not in session, take us to Login page
+        </td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Recipes button</td>
+        <td>When clicked on Recipe button on Home page, only when user in session, takes us to Recipes page.</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Profile button</td>
+        <td>When clicked on Profile button on Home page, only when user in session, take us to Profile page.</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Search button</td>
+        <td>
+            After entering a recipe name, category name, or ingredient name to search,
+            and clicking Search button on Recipes page, display recipes. If there is no match,
+            display a message for the user.
+        </td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Reset</td>
+        <td>When clicked on Reset button on Recipes page, reload the page</td>
+        <td>Pass</td>
+    </tr>
+</table>
+
+![No Results](assets/img-readme/no-results.png)
+
+
+<table>
+    <tr>
+        <th>Test</th>
+        <th>Expected Outcome</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td>Full Recipe button</td>
+        <td>When clicked on Full Recipe button on Profile or Recipes pages,
+            only when user in session, takes us to Full Recipe page.
+        </td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Add Recipe button</td>
+        <td>When clicked on Add Recipe button on Profile page,
+            only when user in session, take us to Add Recipe page
+        </td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Edit button</td>
+        <td>When clicked on Edit button on Full Recipe page, only when user in session, takes us to Edit Recipe page.</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Delete button</td>
+        <td>When clicked on Delete button on Full Recipe page, only when user in session,
+            and recipe was added by the same user, display a modal with a warning message,
+            letting the user know what he/she is about to do is permanent, and provide a 
+            cancel button to go back, or a delete if the user wishes to proceed.</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Back button</td>
+        <td>
+            After clicking the Back button on Full Recipe Page, take us to the previous page.
+        </td>
+        <td>Pass</td>
+    </tr>
+</table>
