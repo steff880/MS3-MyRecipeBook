@@ -536,3 +536,11 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 [^ back to top ^](#table-of-contents)
 
 ### Acknowledgements
+
+-   My mentor, Oluwaseun Owonikoko, for her guidance and feedback.
+-   The team at Code Institute, for teaching me the necessary skills to create this site.
+-   [Stackoverflow](https://stackoverflow.com/) - for general needs
+-   Benjamin Kavanagh, for the help and advices he provided me with. I can't thank him enough.
+-   Code Institute Tutor team
+-   [Rebecca Tracey-Timoney](https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/README.md#Credits)
+-   [juanstelling](https://github.com/juanstelling/MS3_breaktasty/blob/fe5b544beb648f153f69f362bf06b31bcc3e7b09/README.
