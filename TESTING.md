@@ -154,3 +154,81 @@ Add onclick event on the element in HTML and remove Event Listener form script.j
 ![Manage Categories](assets/img-readme/manage-categories.png)
 
 ![Add Categories](assets/img-readme/add-category.png)
+
+## Manual Testing
+
+#### Testing Navigation
+
+If user is not in session:
+
+<table>
+    <tr>
+        <th>Test</th>
+        <th>Expected Outcome</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td>Home</td>
+        <td>When clicked on Home, takes us to Home page</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Recipe</td>
+        <td>When clicked on Recipes, takes us to Recipes page</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Register</td>
+        <td>When clicked on Register, takes us to Register page</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Login</td>
+        <td>When clicked on Login, takes us to Login page</td>
+        <td>Pass</td>
+    </tr>
+</table>
+
+![Logout](assets/img-readme/logout.png)
+
+If user in session:
+
+<table>
+    <tr>
+        <th>Test</th>
+        <th>Expected Outcome</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td>Home</td>
+        <td>When clicked on Home, takes us to Home page</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Recipe</td>
+        <td>When clicked on Recipes, takes us to Recipes page</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Profile</td>
+        <td>When clicked on Profile, takes us to Profile page</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logout</td>
+        <td>When clicked on Logout, remove user from session and redirect to Login</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Manage Categories</td>
+        <td>
+            If user in session is admin, show Manage Categories link and give the user access to it.
+            If the user in session is not admin, hide Manage Categories link and restrict access to it.
+        </td>
+        <td>Pass</td>
+    </tr>
+</table>
+
+![Admin](assets/img-readme/admin.png)
+
+![Not Admin](assets/img-readme/not-admin.png)
