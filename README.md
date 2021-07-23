@@ -437,5 +437,27 @@ If user is **admin**, he/she will have access to _Manage Categories_.
 ### Images
 - Home 
     
-    - 
+    - [Unsplash](https://unsplash.com/photos/08bOYnH_r_E)
+
+- Register
+
+    - [Unsplash](https://unsplash.com/photos/acrBf9BlfvE)
+
+- Recipes 
+
+    - Pesto chicken salad [Unsplash](https://unsplash.com/photos/OzBLe_Eg1mg)
+    - Tomato Soup [Unsplash](https://unsplash.com/photos/fxJTl_gDh28)
+    - Beef Lasagne [Unsplash](https://unsplash.com/photos/OSMAK8b74ls)
+    - Asian Slaw [Unsplash](https://unsplash.com/photos/J3bbba1mkH8)
+    - Pepperoni Pizza [Unsplash](https://unsplash.com/photos/xNnnqN5CQc8)
+    - Margherita [Unsplash](https://unsplash.com/photos/x00CzBt4Dfk)
+    - Jollof spaghetti [Here](https://thenaturalfestival.com/wp-content/uploads/2020/03/1585495342_maxresdefault.jpg)
+
+- Method and Ingredients in Full Recipe page
+
+    - [PurePNG](https://purepng.com/photo/13620/nature-pepermint)
+
+- Footer and Favicon
+
+    - [PurePNG](https://purepng.com/photo/13631/nature-pepermint)
 ### Acknowledgements
