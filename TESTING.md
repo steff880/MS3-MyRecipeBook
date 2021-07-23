@@ -471,3 +471,8 @@ no syntax errors in the project.
 
         2.  Samsung Galaxy s10 and works fine
 
+## For the Assessors
+
+**_Please note, that due to being pressed by the time, was not able to add all the testing I wanted to. Hope, the testing that I currently documented, is sufficient_**. 
+
+Thank you 😀.

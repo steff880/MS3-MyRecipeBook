@@ -547,3 +547,13 @@ If the user is **admin**, he/she will have access to _Manage Categories_.
 -   [Rebecca Tracey-Timoney](https://github.com/rebeccatraceyt/bake-it-til-you-make-it/blob/master/README.md#Credits)
 -   [juanstelling](https://github.com/juanstelling/MS3_breaktasty/blob/fe5b544beb648f153f69f362bf06b31bcc3e7b09/README)
 -   [w3schools](https://www.w3schools.com/default.asp) for all the useful information found on the site.
+
+
+## For the Assessors
+
+If you would like to login as an **admin**, please use this:
+
+- username: steff777
+- password: testM3
+
+Thank you 😀.
