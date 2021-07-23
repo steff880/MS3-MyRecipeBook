@@ -326,3 +326,46 @@ If user in session:
         <td>Pass</td>
     </tr>
 </table>
+
+
+#### Testing Forms
+
+- Register Form
+
+ <table>
+    <tr>
+        <th>Test</th>
+        <th>Expected Outcome</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td>Username Field</td>
+        <td>If a user tries to submit the form without entering a username, 
+           display a message that this field is required.
+        </td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Email Address</td>
+        <td>If the user enters a wrong email format, display a message to inform them.</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td>If a user tries to submit without entering a password or the format doesn't match,
+            display a message.
+        </td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Confirm Password</td>
+        <td>When the user confirms the password he/she entered, and if they do not match,
+            display a message to let the user know the passwords do not match.
+            Also disable the submit button to prevent a form submission.
+        </td>
+        <td>Pass</td>
+    </tr>
+</table>
+
+
+![No Match](assets/img-readme/no-match.png)
