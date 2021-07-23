@@ -370,3 +370,31 @@ If user in session:
 
 
 ![No Match](assets/img-readme/no-match.png)
+
+
+- Login Form
+
+ <table>
+    <tr>
+        <th>Test</th>
+        <th>Expected Outcome</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td>Username Field</td>
+        <td>If the user tries to log in with wrong username,
+            provide the user with a message to inform them.
+        </td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td>If the user tries to log in with wrong password,
+            provide the user with a message to inform them.
+        </td>
+        <td>Pass</td>
+    </tr>
+</table>
+
+
+![Message](assets/img-readme/message.png)
